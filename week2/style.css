@@ -23,12 +23,12 @@ header {
   background-color: aliceblue;
   display: inline;
 }
-#pageheader img{
-  float: left;
+#SiteLogo{
+  display: inline-block;
 }
 
-#pageheader h1{
-  float: left;
+#HeaderTitle{
+  display: inline-block;
 }
 
 /*--- footer section - put whatever you want here ---*/

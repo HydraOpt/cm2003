@@ -21,8 +21,15 @@ table { border-collapse: collapse; border-spacing: 0; }
 header {
 	padding: 0 15px;
   background-color: aliceblue;
+}
+#headerId {
   display: inline-block;
-  *display: inline;
+}
+#SiteLogo {
+  display: inline-block;
+}
+#HeaderTitle {
+  display: inline-block;
 }
 
 

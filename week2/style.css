@@ -22,10 +22,7 @@ header {
 	padding: 0 15px;
   background-color: aliceblue;
 }
-#headerId {
-  display: inline-block;
-}
-#SiteLogo {
+#ImageDiv {
   display: inline-block;
 }
 #HeaderTitle {

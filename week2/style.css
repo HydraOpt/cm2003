@@ -23,12 +23,10 @@ header {
   background-color: aliceblue;
 }
 #imageDiv {
-  display: inline-block;
-  vertical-align: middle;
+  float: left;
 }
 #headerTitle {
-  display: inline-block;
-  *display: inline;
+  vertical-align: middle;
 }
 
 

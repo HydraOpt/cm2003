@@ -19,7 +19,6 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /*--- header section - put whatever you want here ---*/
 header {
-	height: 100px;
 	padding: 0 15px;
   background-color: aliceblue;
 }

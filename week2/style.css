@@ -27,7 +27,7 @@ header {
  display: inline-block;;
 }
 #headerTitle {
-  float:left;
+  display: inline-block;;
 }
 
 

@@ -28,6 +28,7 @@ header {
 }
 #headerTitle {
   display: inline-block;
+  *display: inline;
 }
 
 

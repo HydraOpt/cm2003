@@ -23,10 +23,11 @@ header {
   background-color: aliceblue;
 }
 #pageheader img{
+  float: left;
 }
 
 #pageheader h1{
-  display: inline-block;;
+  float: left;
 }
 
 /*--- footer section - put whatever you want here ---*/

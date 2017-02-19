@@ -22,10 +22,10 @@ header {
 	padding: 0 15px;
   background-color: aliceblue;
 }
-#ImageDiv {
+#imageDiv {
   display: inline-block;
 }
-#HeaderTitle {
+#headerTitle {
   display: inline-block;
 }
 

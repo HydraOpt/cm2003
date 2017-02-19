@@ -24,6 +24,7 @@ header {
 }
 #imageDiv {
   display: inline-block;
+  vertical-align: middle;
 }
 #headerTitle {
   display: inline-block;

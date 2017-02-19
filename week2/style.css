@@ -22,10 +22,10 @@ header {
 	padding: 0 15px;
   background-color: aliceblue;
   text-align:center;
+  clear: both;
 }
 #imageDiv {
-  float:left;
-  padding: 400px;
+  float:left;;
 }
 #headerDiv {
   float:left;

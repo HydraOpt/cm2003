@@ -23,8 +23,8 @@ header {
   background-color: aliceblue;
 }
 #pageheader img{
-  display: inline;
 }
+
 #pageheader h1{
   display: inline-block;;
 }

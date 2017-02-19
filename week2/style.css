@@ -25,6 +25,7 @@ header {
 }
 #imageDiv {
   float:left;
+  padding: 400px;
 }
 #headerDiv {
   float:left;

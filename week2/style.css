@@ -25,10 +25,7 @@ header {
   clear: both;
 }
 #imageDiv {
-  float:left;;
-}
-#headerDiv {
-  float:left;
+  clear: both;
 }
 
 

@@ -24,10 +24,10 @@ header {
   text-align:center;
 }
 #imageDiv {
- display: inline-block;;
+  float:left;
 }
-#headerTitle h1 {
-  display: inline-block;;
+#headerDiv {
+  float:left;
 }
 
 

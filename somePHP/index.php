@@ -5,7 +5,7 @@
   $test4 = "Phil";
   $test5 = "test4"
   echo $test.$test2;
-  echo "<br /><br /> ";
+/*  echo "<br /><br /> ";
   echo $test3/22;
   echo "<br /><br /> ";
   echo "His name is $test4 or ".$test4;
@@ -19,6 +19,6 @@
   echo "<br /><br /> ";
   $array2 = array("Framce" => "Fremch", "USA" => "Americans");
   unset($array["USA"]);
-  print_r($array2);
-  
+  print_r($array2); */
+
 ?>

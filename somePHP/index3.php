@@ -13,7 +13,7 @@
 
         <?php
         echo "does it work at all";
-        $emailTo="battistoniserena@gmail.com";
+        $emailTo="alessio.gadaleta@gmail.com";
         $subject="You are hot!";
         $body="You really are. L ammiratore segreto";
         $headers="From: ammiratoremisterioso@callme.com";

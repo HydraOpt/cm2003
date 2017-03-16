@@ -6,23 +6,19 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
 </head>
 
 <body>
     <input id="myInput" type="text" value="test" />
-    <p id="par">Random Text</p>
-    <button id="firstButton">Click Me!</button>
+    <button id="stylesChanger">Change the text!</button>
+    <div id="firstDiv">This is some text</div>
     <script type="text/javascript">
-        var text = document.getElementById("myInput").value;
-        document.getElementById("firstButton").onclick = function() {
-            text = document.getElementById("myInput").value;
-            document.getElementById("par").innerHTML = text;
+        var newText = document.getElementById("myInput").value;
+        document.getElementById("stylesChanger").onclick = function() {
+            newText = document.getElementById("myInput").value;
+            document.getElementById("firstDiv").innerHTML = newText;
         }
     </script>
-
 </body>
-
 
 </html>

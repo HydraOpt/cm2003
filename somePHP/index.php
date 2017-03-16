@@ -17,7 +17,8 @@
   $myArray[]="mandolino";
   print_r($myArray);
   echo "<br /><br /> ";
-  $array2 = array("Framce" => "Fremch, "USA" => "Americans");
+  $array2 = array("Framce" => "Fremch", "USA" => "Americans");
   unset($array["USA"]);
   print_r($array2);
+  
 ?>

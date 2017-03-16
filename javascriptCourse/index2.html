@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <input id = "myInput" type ="text">
+    <input id = "myInput" type ="text" value ="test"/>
     <p id="par">Random Text</p>
     <button id="firstButton">Click Me!</button>
             <script type="text/javascript">
-            var btn1 = document.getElementById('firstButton');
             var text = document.getElementById('myInput').value;
+                document.getElementById("par").onclick = function() {
 
-                document.getElementById(btn1).onclick = function() {
+                  text = document.getElementById('myInput').value;
                     document.getElementById("par").innerHTML = text;
                 }
             </script>

@@ -1,0 +1,119 @@
+/** everything body html selector */
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+input {
+  background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+p {
+    letter-spacing: 0.5em;
+    word-spacing: 2em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+/** lengths and percentage
+px (such as font-size: 12px) is the unit for pixels.
+em (such as font-size: 2em) is the unit for the calculated size of a font. So “2em”, for example, is two times the current font size.
+pt (such as font-size: 12pt) is the unit for points, for measurements typically in printed media.
+% (such as width: 80%) is the unit for… wait for it… percentages.
+font-size: 1.5em;
+- */
+
+
+/** Color
+different ways to write a value
+1-  color names include aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow. transparent
+2- rgb(255,0,0)
+3- rgb(100%,0%,0%)
+4 - #ff0000
+5-  #f00 -
+
+h1 {
+    color: #ffc;
+    background-color: #009;
+}
+ */
+
+
+
+
+/** fonts
+Not everyone has the same fonts, so there's little point to use unusual fonts.
+There are a select few “safe” fonts (the most commonly used are Arial, Verdana and Times New Roman), but you can specify more than one font, separated by commas.
+font-family: arial, helvetica, serif;
+font-family: "Times New Roman"; */
+
+/** font-size */
+
+/** font-weight states whether the text is bold or not.
+ Most commonly this is used as font-weight: bold or  font-weight: normal but other values are (but don't work properly on older browser):
+ bolder, lighter, 100, 200, 300, 400 (same as normal), 500, 600, 700 (same as bold), 800 or 900. */
+
+
+/**font-style
+font-style states whether the text is italic or not. It can be font-style: italic or font-style: normal. */
+
+
+/** text-decoration states whether the text has got a line running under, over, or through it.
+text-decoration: underline
+text-decoration: overline places a line above the text.
+text-decoration: line-through puts a line through the text (“strike-through”).
+This property is usually used to decorate links and you can specify no underline with text-decoration: none. */
+
+
+/** text-transform
+text-transform will change the case of the text.
+text-transform: capitalize turns the first letter of every word into uppercase.
+text-transform: uppercase turns everything into uppercase.
+text-transform: lowercase turns everything into lowercase.
+text-transform: none I’ll leave for you to work out. */
+
+/** text spacing
+The letter-spacing and word-spacing properties are for spacing between letters or words. The value can be a length or normal.
+The line-height property sets the height of the lines in an element, such as a paragraph, without adjusting the size of the font. It can be a number (which specifies a multiple of the font size, so “2” will be two times the font size, for example), a length, a percentage, or normal.
+The text-align property will align the text inside an element to left, right, center, or justify.
+The text-indent property will indent the first line of a paragraph, for example, to a given length or percentage. This is a style traditionally used in print, but rarely in digital media such as the web. */
+
+/** margin and padding are the two most commonly used properties for spacing-out elements.
+A margin is the space outside something, whereas padding is the space inside something
+The four sides of an element can also be set individually.
+margin-top, margin-right, margin-bottom, margin-left, padding-top, padding-right, padding-bottom and padding-left are the self-explanatory properties you can use
+h2 {
+    font-size: 1.5em;
+    background-color: #ccc;
+    margin: 20px;
+    padding: 40px; }
+
+    Margins, padding and borders (see next page) are all part of what’s known as the Box Model. */
+
+    /** Borders
+    Borders can be applied to most HTML elements within the body.
+    To make a border around an element, all you need is border-style. The values can be solid, dotted, dashed, double, groove, ridge, inset and outset
+    border-width sets the width of the border, most commonly using pixels as a value. There are also properties for border-top-width, border-right-width, border-bottom-width and border-left-width.
+    Finally, border-color sets the color.
+
+    h2 {
+    border-style: dashed;
+    border-width: 3px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color: red; }*/

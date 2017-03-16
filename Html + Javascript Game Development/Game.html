@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <p><a href="https://www.udemy.com/code-your-first-game">Udemy course reference</a></p>
+<canvas id="gameCanvas" width="800" height="600"></canvas>
+
+<script>
+var canvas;
+var canvasContext;
+var ballX = 50;
+var ballY = 50;
+var ballSpeedX = 5;
+var ballSpeedY = 4;
+
+var paddle1Y = 250;
+const PADDLE_HEIGHT = 100;
+
+window.onload = function() {
+  canvas = document.getElementById('gameCanvas');
+  canvasContext = canvas.getContext('2d');
+
+  var framesPerSecond = 30;
+  setInterval(function() {
+    movement();
+    draw();
+  }, 1000/framesPerSecond);
+
+  canvas.addEventListener('mousemove',
+		function(evt) {
+			var mousePos = calculateMousePos(evt);
+			paddle1Y = mousePos.y - (PADDLE_HEIGHT/2);
+		});
+}
+
+
+function movement(){
+    ballX = ballX + ballSpeedX;
+  	ballY = ballY + ballSpeedY;
+
+  	if(ballX < 0) {
+  		ballSpeedX = -ballSpeedX;
+  	}
+  	if(ballX > canvas.width) {
+  		ballSpeedX = -ballSpeedX;
+  	}
+  	if(ballY < 0) {
+  		ballSpeedY = -ballSpeedY;
+  	}
+  	if(ballY > canvas.height) {
+  		ballSpeedY = -ballSpeedY;
+  	}
+}
+
+function draw(){
+
+  console.log("Called draw()" + ballX);
+  /** in two steps
+   canvasContext.fillStyle = 'black';
+  canvasContext.fillRect(0,0,canvas.width,canvas.height); */
+  /** one step */
+
+  // next line blanks out the screen with blac
+  	colorRect(0,0,canvas.width,canvas.height,'black');
+
+  	// this is left player paddle
+  	colorRect(0,paddle1Y,10,PADDLE_HEIGHT,'white');
+
+  	// next line draws the ball
+    // (Xcenter, Ycenter, radiousSoX2, angle, radiant(1 PI is half), boolean to decide wich part to fill in case of not whole )
+    colorCircle(ballX, ballY, 10, 'white');
+
+
+
+}
+
+function colorCircle(centerX, centerY, radius, drawColor) {
+	canvasContext.fillStyle = drawColor;
+	canvasContext.beginPath();
+	canvasContext.arc(centerX, centerY, radius, 0,Math.PI*2,true);
+	canvasContext.fill();
+}
+
+function colorRect(leftX,topY, width,height, drawColor) {
+	canvasContext.fillStyle = drawColor;
+	canvasContext.fillRect(leftX,topY, width,height);
+}
+
+function calculateMousePos(evt) {
+	var rect = canvas.getBoundingClientRect();
+	var root = document.documentElement;
+	var mouseX = evt.clientX - rect.left - root.scrollLeft;
+	var mouseY = evt.clientY - rect.top - root.scrollTop;
+	return {
+		x:mouseX,
+		y:mouseY
+	};
+}
+
+</script>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Learning Javascript</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        #circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <button onclick="alert('Hi Gorgeus')">Click me!</button> -->
+    <p id="first">ap</p>
+    <button id="firstButton">Click Me!</button>
+    <button id="secondButton">Click Me!</button>
+    <div id="circle">
+        <div>
+            <script type="text/javascript">
+            var btn1 ="firstButton";
+                //alert(document.getElementById('first').innerHTML)
+
+                document.getElementById(btn1).onclick = function() {
+                    //alert("Something good");
+                    document.getElementById('first').innerHTML = "<ul><li>cat</li><li>dog</li></ul>";
+                }
+
+                document.getElementById('secondButton').onclick = function() {
+                    //alert("Something good");
+                    document.getElementById('first').innerHTML = document.getElementById('first').innerHTML + "dada";
+                }
+
+                document.getElementById("circle").onclick = function() {
+                    document.getElementById("circle").style.display = "none";
+                }
+            </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Learning Javascript</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+</head>
+
+<body>
+    <input id = "myInput" type ="text">
+    <p id="par">Random Text</p>
+    <button id="firstButton">Click Me!</button>
+            <script type="text/javascript">
+            var btn1 = document.getElementById('firstButton');
+            var text = document.getElementById('myInput').value;
+
+                document.getElementById(btn1).onclick = function() {
+                    document.getElementById("par").innerHTML = text;
+                }
+            </script>
+
+</body>
+
+
+</html>

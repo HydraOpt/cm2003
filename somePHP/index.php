@@ -1,9 +1,9 @@
 <?php
   $test = "a variable and here is an escaped \" ";
-  $test2 = " other text"; /*
+  $test2 = " other text";
   $test3 = 44;
   $test4 = "Phil";
-  $test5 = "test4"*/
+  $test5 = "test4";
   echo $test.$test2;
 /*  echo "<br /><br /> ";
   echo $test3/22;

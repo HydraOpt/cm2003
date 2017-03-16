@@ -12,7 +12,7 @@
     <div>
 
         <?php
-        $echo "does it work at all";
+        echo "does it work at all";
         $emailTo="battistoniserena@gmail.com";
         $subject="You are hot!";
         $body="You really are. L ammiratore segreto";

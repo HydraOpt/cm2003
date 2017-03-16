@@ -12,14 +12,6 @@
     <input id="myInput" type="text" value="test" />
     <button id="stylesChanger">Change the text!</button>
     <div id="firstDiv">This is some text</div>
-    <script type="text/javascript">
-        var newText = document.getElementById("myInput").value;
-        document.getElementById("stylesChanger").onclick = function() {
-            newText = document.getElementById("myInput").value;
-            document.getElementById("firstDiv").innerHTML = newText;
-        }
-
-    </script>
     <div>
     <?php
     $emailTo="alessio.gadaleta@gmail.com";
@@ -30,6 +22,15 @@
     echo mail($emailTo, $subject, $body, $headers);
     ?>
   </div>
+    <script type="text/javascript">
+        var newText = document.getElementById("myInput").value;
+        document.getElementById("stylesChanger").onclick = function() {
+            newText = document.getElementById("myInput").value;
+            document.getElementById("firstDiv").innerHTML = newText;
+        }
+
+    </script>
+
 </body>
 
 </html>

@@ -11,17 +11,16 @@
 </head>
 
 <body>
-    <input id = "myInput" type ="text" value ="test"/>
+    <input id="myInput" type="text" value="test" />
     <p id="par">Random Text</p>
     <button id="firstButton">Click Me!</button>
-            <script type="text/javascript">
-            var text = document.getElementById('myInput').value;
-                document.getElementById("par").onclick = function() {
-
-                  text = document.getElementById('myInput').value;
-                    document.getElementById("par").innerHTML = text;
-                }
-            </script>
+    <script type="text/javascript">
+        var text = document.getElementById("myInput").value;
+        document.getElementById("firstButton").onclick = function() {
+            text = document.getElementById("myInput").value;
+            document.getElementById("par").innerHTML = text;
+        }
+    </script>
 
 </body>
 

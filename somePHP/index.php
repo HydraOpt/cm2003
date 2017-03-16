@@ -1,5 +1,5 @@
 <?php
-  $test = "a variable and here is an escaped \"";
+  $test = "a variable and here is an escaped ";
   $test2 = " other text";
   $test3 = 44;
   $test4 = "Phil";

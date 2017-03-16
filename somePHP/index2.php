@@ -1,4 +1,4 @@
 <?php
- echo "does it work?";
+ echo "does it work?;
 
  ?>

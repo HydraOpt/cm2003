@@ -16,10 +16,11 @@
         // If "name" (array) is not empty (true) return (with GET) the var 'name'
         if ($_GET["name"]) {
             echo "The name is " . $_GET['name'];
+         // If "name" is empty
+        } else{
+            echo "No name";
         }
-        // if "submit" is empty
-    } else{
-        echo "No name yet";
+
     }
 
     ?>

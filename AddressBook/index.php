@@ -10,8 +10,15 @@
 
 <body>
 <div>
+    <?php
+        if($_GET["name"]){
+            echo "The name is ".$_GET['name'];
+        }
+
+    ?>
     <form>
-        <label for="name">
+        <label for="name">Name</label>
+            //create a variable named name and with submit it trigger a GET
         <input name="name" type="text" value="test"/>
         <input type="submit"/>
 
@@ -22,12 +29,3 @@
 </html>
 
 
-<?php
-/**
- * Created by PhpStorm.
- * User: CodeMonkey
- * Date: 17/03/2017
- * Time: 16:28
- */
-
-?>

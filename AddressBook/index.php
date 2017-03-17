@@ -1,3 +1,10 @@
+<?php
+    if($_POST["submit"]){
+        $result = '<div>Form Submitted</div>';
+    }
+?>
+
+
 <!doctype html>
 <html>
 
@@ -38,6 +45,8 @@
 
     <div class="form">
         <h1>My Address Book</h1>
+        <?php echo $result; ?>
+
         <form method="post">
 
             <div class="form-group">
@@ -65,7 +74,7 @@
                 <input type="email" name="email" class="form-elem" placeholder="something@something.com">
             </div>
 
-            <input type="submit" class=btn" value="Submit/">
+            <input type="submit" class=btn" value="Submit"/>
 
 
         </div>

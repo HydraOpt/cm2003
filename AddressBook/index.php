@@ -11,11 +11,26 @@
 <body>
 <div>
     <?php
-    // If "submit" (array) is not empty
-    if($_GET["submit"]) {
-        // If "name" (array) is not empty (true) return (with GET) the var 'name'
-        if ($_GET["name"]) {
-            echo "The name is " . $_GET['name'];
+    // Now the element are submited in POST (array)
+    $names =array("Fred", "Rob", "Ian");
+
+    // If "submit" element of POST (array) is not empty
+    if($_POST["submit"]) {
+        // If "name" element of POST (array) is not empty (true)
+        if ($_POST["name"]) {
+            //foreach
+            foreach($names as $name /* => $value is not inserted couse we are not interested*/){
+                // if the var "name" in POST is equal to the element with placeholder $name in array $names
+                if($_POST["name"]==$name){
+                    echo "I know you, your name is ".$name;
+                    //declaring a boolean var to true
+                    $knowyou =1;
+                }
+
+            }
+            if(!$knowyou){
+                echo "I don't know you";
+            }
          // If "name" is empty
         } else{
             echo "No name";
@@ -24,7 +39,8 @@
     }
 
     ?>
-    <form>
+<!-- In this case the form will submit using the POST method instead of GET(default) -->
+    <form method ="post">
         <label for="name">Name</label>
 <!--            create a variable named name and with submit it trigger a GET -->
         <input name="name" type="text" value="test"/>

@@ -1,6 +1,6 @@
 <?php
     if($_POST["submit"]){
-        $result = '<div>Form Submitted</div>';
+        $result = 'Form Submitted';
     }
 ?>
 

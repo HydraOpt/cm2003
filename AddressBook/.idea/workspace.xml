@@ -25,10 +25,10 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.840052">
-              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.7347204">
+              <caret line="54" column="104" selection-start-line="54" selection-start-column="104" selection-end-line="54" selection-end-column="104" />
               <folding>
-                <element signature="e#429#798#0#PHP" expanded="true" />
+                <element signature="e#462#831#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -172,10 +172,10 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.840052">
-          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.7347204">
+          <caret line="54" column="104" selection-start-line="54" selection-start-column="104" selection-end-line="54" selection-end-column="104" />
           <folding>
-            <element signature="e#429#798#0#PHP" expanded="true" />
+            <element signature="e#462#831#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

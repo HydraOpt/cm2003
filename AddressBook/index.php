@@ -11,14 +11,21 @@
 <body>
 <div>
     <?php
-        if($_GET["name"]){
-            echo "The name is ".$_GET['name'];
+    // If "submit" (array) is not empty
+    if($_GET["submit"]) {
+        // If "name" (array) is not empty (true) return (with GET) the var 'name'
+        if ($_GET["name"]) {
+            echo "The name is " . $_GET['name'];
         }
+        // if "submit" is empty
+    } else{
+        echo "No name yet";
+    }
 
     ?>
     <form>
         <label for="name">Name</label>
-            //create a variable named name and with submit it trigger a GET
+<!--            create a variable named name and with submit it trigger a GET -->
         <input name="name" type="text" value="test"/>
         <input type="submit"/>
 

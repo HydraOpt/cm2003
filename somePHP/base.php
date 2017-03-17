@@ -16,7 +16,7 @@
 $emailTo="alessio.gadaleta@gmail.com";
 $subject="I hope this works!";
 $body="I think you're great";
-$headers="From: rob@robpercival.co.uk";
+$headers="From: someone";
 if (mail($emailTo, $subject, $body, $headers)) {
 echo "Mail sent successfully!";
 } else {

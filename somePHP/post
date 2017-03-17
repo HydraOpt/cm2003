@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My First Webpage</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div>
+      <?php
+      //an array of names
+      $names = array(“Fred”, “Rob”, “Ian”);
+      //return true if submit has a value and it's clicked
+      if ($_POST["submit"]) {
+        //return true if the variable name exists
+        if ($_POST["name"]) {
+          //tricky name for foreach variables
+          foreach ($names as $name) {
+            //first one is our variable, second is the for each value
+            if ($POST['name'] == $name) echo "I know you! Your name is "".$name;
+            //boolean in scope still working
+            $knowYou = 1;
+          }
+          if (!$knowYou) echo "I don’t know you, "".$name;
+        } else {
+          echo "Please enter your name";
+        }
+      }
+      ?>
+
+      <form method=“post”>
+        <label for="name">Name</label>
+        <input name="name" type="text" />
+        <input type="submit" name="submit" value="Submit Your Name" />
+      </form>
+    </div>
+  </body>
+</html>

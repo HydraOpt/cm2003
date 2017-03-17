@@ -14,7 +14,7 @@
         <?php
         echo "does it work at all";
         $emailTo="alessio.gadaleta@gmail.com";
-        $subject="You are hot!";
+        $subject="You are good!";
         $body="You really are. L ammiratore segreto";
         $headers="From: ammiratoremisterioso@callme.com";
         if (mail($emailTo, $subject, $body, $headers)) {

@@ -28,7 +28,7 @@
         <label for="name">Name</label>
 <!--            create a variable named name and with submit it trigger a GET -->
         <input name="name" type="text" value="test"/>
-        <input type="submit"/>
+        <input type="submit" name="submit" value="Submit your name"/>
 
     </form>
 

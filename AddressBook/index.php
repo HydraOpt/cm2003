@@ -12,7 +12,7 @@
             border: 1px solid black;
             margin-left: 10px;
             margin-top: 10px;
-            border-radius: 10px;
+            padding: 10px;
         }
         </style>
 </head>
@@ -42,21 +42,26 @@
 
             <div class="form-group">
                 <label for="organization">Organization Name</label>
+                <br>
                 <input type="text" name="organization" class="form-elem" placeholder="organization name">
             </div>
 
             <div class="form-group">
                 <label for="address">Address</label>
+                <br>
                 <input type="text" name="address" class="form-elem" placeholder="organization main addres">
             </div>
 
+
             <div class="form-group">
                 <label for="phone">Telephone Number</label>
+                <br>
                 <input type="text" name="phone" class="form-elem" placeholder="organization phone number">
             </div>
 
             <div class="form-group">
                 <label for="email">Email</label>
+                <br>
                 <input type="email" name="email" class="form-elem" placeholder="something@something.com">
             </div>
 

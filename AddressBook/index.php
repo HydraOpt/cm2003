@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
     if($_POST["submit"]){
-        $result = 'Form Submitted';
+        $result = '<div>Form Submitted</div>';
     }
     else {
         $result = 'Something Wrong';

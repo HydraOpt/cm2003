@@ -3,6 +3,9 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+    mysqli_connect("localhost", "befc77d2972871", "032b4371", "big_daddy");
+    echo mysqli_connect_error();
+/*
     if($_POST["submit"]){
         $result = '<div>Form Submitted</div>';
     }
@@ -28,7 +31,9 @@ ini_set('display_errors', 1);
 
     if($error){
         $result='<div> Error: '.$error.'</div>';
-    }
+    } else {
+        //todo without errors
+    } */
 ?>
 
 

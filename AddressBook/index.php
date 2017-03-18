@@ -9,6 +9,14 @@ ini_set('display_errors', 1);
     else {
         $result = 'Something Wrong';
     }
+
+    if(!$_POST["name"]){
+        $error ="A name is required";
+    }
+
+    if($error){
+        $result='<div> Error: '.$error.'</div>';
+    }
 ?>
 
 

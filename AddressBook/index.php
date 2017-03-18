@@ -11,7 +11,19 @@ ini_set('display_errors', 1);
     }
 
     if(!$_POST["name"]){
-        $error ="A name is required";
+        $error ="<br />A name is required";
+    }
+
+    if(!$_POST["phone"]){
+        $error .="<br />Phone is missing";
+    }
+
+    if(!$_POST["address"]){
+         $error .="<br />Address is missing";
+    }
+
+    if(!$_POST["email"]){
+         $error .="<br />Email is missing";
     }
 
     if($error){

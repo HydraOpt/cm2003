@@ -67,7 +67,7 @@ ini_set('display_errors', 1);
             <div class="form-group">
                 <label for="organization">Organization Name:</label>
                 <br>
-                <input type="text" name="organization" class="form-elem" placeholder="organization name">
+                <input type="text" name="name" class="form-elem" placeholder="organization name">
             </div>
 
             <div class="form-group">

@@ -25,10 +25,10 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9827798">
-              <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.041820418">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
-                <element signature="e#535#904#0#PHP" expanded="true" />
+                <element signature="e#591#960#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,7 +140,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="537" y="54" width="1400" height="990" extended-state="1" />
+    <frame x="537" y="54" width="1400" height="990" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12879884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -173,10 +173,10 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9827798">
-          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.041820418">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="e#535#904#0#PHP" expanded="true" />
+            <element signature="e#591#960#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -81,7 +81,7 @@ ini_set('display_errors', 1);
                 <input type="email" name="email" class="form-elem" placeholder="something@something.com">
             </div>
 
-            <input type="submit" class="btn" value="submit"/>
+            <input type="submit" name="submit" class="btn" value="submit"/>
 
 
         </div>

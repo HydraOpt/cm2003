@@ -6,6 +6,9 @@ ini_set('display_errors', 1);
     if($_POST["submit"]){
         $result = 'Form Submitted';
     }
+    else {
+        $result = 'Something Wrong';
+    }
 ?>
 
 

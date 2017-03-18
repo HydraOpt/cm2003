@@ -74,7 +74,7 @@
                 <input type="email" name="email" class="form-elem" placeholder="something@something.com">
             </div>
 
-            <input type="submit" class=btn" value="Submit"/>
+            <input type="submit" class=btn" value="submit"/>
 
 
         </div>

@@ -102,6 +102,7 @@ ini_set('display_errors', 1);
 
     <div id="form">
         <h1>My Address Book</h1>
+        <br>
 
         <div id="organisationDiv">
             <label for="organisationSelector">Organization</label>
@@ -110,6 +111,7 @@ ini_set('display_errors', 1);
                 <option>Placeholder2</option>
                 <option value="id?" >Placeholder3</option>
             </select>
+            <br>
             <button type ="button">Show All</button>
             <button type ="button">Add</button>
             <button type ="button">Edit</button>
@@ -123,6 +125,7 @@ ini_set('display_errors', 1);
                 <option>Placeholder2</option>
                 <option value="id?" >Placeholder3</option>
             </select>
+            <br>
             <button type ="button">Show All</button>
             <button type ="button">Add</button>
             <button type ="button">Edit</button>

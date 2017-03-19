@@ -3,14 +3,14 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-    $tableName = "`organization`";
+    $orgTable = "`organization`";
 
     //creating connection
     $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
     echo mysqli_connect_error();
 
     //saving query input
-    $qSelectAll ="SELECT * FROM ".$tableName;
+    $qSelectAll ="SELECT * FROM ".$orgTable;
 
     if($result=mysqli_query($link, $qSelectAll)){
         $row = mysqli_fetch_array($result);
@@ -24,7 +24,7 @@ ini_set('display_errors', 1);
     mysqli_query($link, $qInsert);
     */
 
-    $qUpdate="UPDATE ".$tableName." SET `email` ='merlinthemage@camail.com' WHERE `id`=11 LIMIT 1";
+    $qUpdate="UPDATE ".$orgTable." SET `email` ='merlinthemage@camail.com' WHERE `id`=11 LIMIT 1";
     mysqli_query($link, $qUpdate);
 /*
     if(mysqli_connect_error()){
@@ -79,11 +79,8 @@ ini_set('display_errors', 1);
         $query = "Select * FROM `organization` WHERE `id`=".$orgId;
         $result=mysqli_query($link, $query);
         $row =mysqli_fetch_array($result);
-        echo '<div class="orgDiv">',
-        '<p>Organisation name: '.$row["name"].'</p>',
-            '<p>Address: '.$row["address"].'</p>',
-            '<p>Phone Number: '.$row["phone_number"].'</p>',
-            '<p>Email: '.$row["email"].'</p>';
+        echo 'document.getElementById("outputDiv").innerHTML += "<p>Organisation name: "'.$row["name"].'"</p><p>Address: "'.$row["address"].'"</p><p>Phone Number: "'.$row["phone_number"].'"</p>
+            <p>Email: "'.$row["email"].'"</p>"';
     }
 ?>
 <script type="text/javascript">
@@ -93,6 +90,12 @@ ini_set('display_errors', 1);
         <?php load(); ?>;
 
     }
+/*
+    function orgSelChange(){
+        var orgSel = document.getElementById("orgSelector");
+        var orgId = orgSel.options[orgSel.selectedIndex].value;
+    }
+    */
 </script>
 
 
@@ -140,10 +143,7 @@ ini_set('display_errors', 1);
 
         <div id="organisationDiv">
             <label for="orgSelector">Organization</label>
-            <select name="orgSelector" id="orgSelector">
-                <option>Placeholder1</option>
-                <option>Placeholder2</option>
-                <option value="id?" >Placeholder3</option>
+            <select name="orgSelector" id="orgSelector" <!-- onchange="" -->>
                 <script type="text/javascript">
                     updateSelectors();
                 </script>
@@ -202,6 +202,9 @@ ini_set('display_errors', 1);
 
             <input type="submit" name="submit" class="btn" value="submit"/>
 
+        </div>
+
+    <div id="outputDiv">
         </div>
 
     <?php printOrg(1) ?>

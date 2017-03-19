@@ -102,12 +102,18 @@ ini_set('display_errors', 1);
 
     <div id="form">
         <h1>My Address Book</h1>
-<!--        <?php //echo $result; ?> -->
+
+        <div id="organizationDiv">
+            <label for="organizationSelector">Organization</label>
+            <button type ="button">Show All</button>
+            <button type ="button">Add</button>
+            <button type ="button">Edit</button>
+            <button type ="button">Delete</button>
 
         <form method="post">
 
             <div class="form-group">
-                <label for="organization">Organization Name:</label>
+                <label for="name">Organization Name:</label>
                 <br>
                 <input type="text" name="name" class="form-elem">
             </div>

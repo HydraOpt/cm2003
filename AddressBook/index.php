@@ -12,7 +12,7 @@ ini_set('display_errors', 1);
 
     if($result=mysqli_query($link, $qSelectAll)){
         $row = mysqli_fetch_array($result);
-        print_r("row");
+        print_r($row);
     } else {
         echo "query failed";
     }

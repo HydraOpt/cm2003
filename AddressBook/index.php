@@ -118,6 +118,8 @@ ini_set('display_errors', 1);
             <button type ="button">Delete</button>
         </div>
 
+        <br>
+
         <div id="peopleDiv">
             <label for="peopleSelector">People</label>
             <select name="peopleSelector">
@@ -132,7 +134,7 @@ ini_set('display_errors', 1);
             <button type ="button">Delete</button>
         </div>
 
-
+        <br>
 
         <form method="post">
 

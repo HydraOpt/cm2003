@@ -68,7 +68,7 @@ ini_set('display_errors', 1);
                 echo '<script type="text/javascript">',
                 'var orgSel = document.getElementById("orgSelector");',
                 'var option = document.createElement("option");',
-                'option.text = '.$row["name"].';',
+                'option.text = "'.$row["name"].'";',
                 'option.value = '.$row["id"].';',
                 'orgSel.add(option);',
                 '</script>';

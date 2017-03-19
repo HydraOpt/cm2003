@@ -16,6 +16,9 @@ ini_set('display_errors', 1);
     } else {
         echo "query failed";
     }
+
+    $qInsert = "INSERT INTO `organization`(`name`, `address`, `phone_number`) VALUES('Camelot', 'Cornwall', '0000001')";
+    mysqli_query($link, $query);
 /*
     if(mysqli_connect_error()){
         die("Cannot connect to db");

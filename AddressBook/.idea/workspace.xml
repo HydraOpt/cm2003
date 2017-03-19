@@ -25,11 +25,12 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39729398">
-              <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.39488965">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
               <folding>
-                <element signature="e#1583#1952#0#PHP" expanded="true" />
-                <marker date="1489943318911" expanded="true" signature="274:300" placeholder="SELECT * FRO..organization..." />
+                <element signature="e#1738#2107#0#PHP" expanded="true" />
+                <marker date="1489944008833" expanded="true" signature="274:300" placeholder="SELECT * FRO..organization..." />
+                <marker date="1489944008833" expanded="true" signature="486:588" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -56,9 +57,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="227" />
-    <option name="width" value="1400" />
-    <option name="height" value="990" />
+    <option name="x" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -146,10 +147,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="227" y="0" width="1400" height="990" extended-state="0" />
+    <frame x="-8" y="0" width="976" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12879884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18580376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -187,11 +188,12 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39729398">
-          <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.39488965">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
           <folding>
-            <element signature="e#1583#1952#0#PHP" expanded="true" />
-            <marker date="1489943318911" expanded="true" signature="274:300" placeholder="SELECT * FRO..organization..." />
+            <element signature="e#1738#2107#0#PHP" expanded="true" />
+            <marker date="1489944008833" expanded="true" signature="274:300" placeholder="SELECT * FRO..organization..." />
+            <marker date="1489944008833" expanded="true" signature="486:588" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

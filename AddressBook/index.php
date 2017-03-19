@@ -80,7 +80,7 @@ ini_set('display_errors', 1);
     function updateSelectors() {
         var orgSel = document.getElementById("orgSelector");
         orgSel.options.length = 0;
-        <?php load(); ?>
+        "<?php load(); ?>";
 
     }
 </script>

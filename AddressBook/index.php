@@ -115,6 +115,7 @@ ini_set('display_errors', 1);
             background-color: #88bbd6;
         }
         </style>
+    <?php printOrg(1) ?>
 </head>
 
 <body>
@@ -206,7 +207,7 @@ ini_set('display_errors', 1);
     <div id="outputDiv">
         </div>
 
-    <?php printOrg(1) ?>
+
 
 </body>
 

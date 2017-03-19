@@ -3,12 +3,14 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+    $tableName = `organization`;
+
     //creating connection
     $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
     echo mysqli_connect_error();
 
     //saving query input
-    $qSelectAll ="SELECT * FROM organization";
+    $qSelectAll ="SELECT * FROM ".$tableName;
 
     if($result=mysqli_query($link, $qSelectAll)){
         $row = mysqli_fetch_array($result);
@@ -17,8 +19,12 @@ ini_set('display_errors', 1);
         echo "query failed";
     }
 
+    /*
     $qInsert = "INSERT INTO `organization`(`name`, `address`, `phone_number`) VALUES('Camelot', 'Cornwall', '0000001')";
     mysqli_query($link, $qInsert);
+    */
+
+    $qUpdate="UPDATE ".$tableName." SET `email` ='merlinthemage@camail.com' WHERE `id`=2 LIMIT 1";
 /*
     if(mysqli_connect_error()){
         die("Cannot connect to db");

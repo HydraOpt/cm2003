@@ -201,10 +201,10 @@ ini_set('display_errors', 1);
             </div>
 
             <input type="submit" name="submit" class="btn" value="submit"/>
-            <?php printOrg(1) ?>
-
 
         </div>
+
+    <?php printOrg(1) ?>
 
 </body>
 

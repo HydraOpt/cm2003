@@ -105,11 +105,14 @@ ini_set('display_errors', 1);
         <br>
 
         <div id="organisationDiv">
-            <label for="organisationSelector">Organization</label>
-            <select name="organisationSelector">
+            <label for="orgSelector">Organization</label>
+            <select name="orgSelector" id="orgSelector">
                 <option>Placeholder1</option>
                 <option>Placeholder2</option>
                 <option value="id?" >Placeholder3</option>
+                <script type="text/javascript">
+                    updateSelectors();
+                </script>
             </select>
             <br>
             <button type ="button">Show All</button>
@@ -169,6 +172,16 @@ ini_set('display_errors', 1);
         </div>
 
 </body>
+
+<footer>
+    <script type="text/javascript">
+        function updateSelectors() {
+            var orgSel = document.getElementById("orgSelector");
+            org.options.length = 0;
+        }
+    </script>
+
+</footer>
 
 </html>
 

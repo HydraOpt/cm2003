@@ -65,13 +65,11 @@ ini_set('display_errors', 1);
         $query = "Select * FROM `organization`";
         if($result=mysqli_query($link, $query)){
             while($row = mysqli_fetch_array($result)){
-                echo '<script type="text/javascript">',
-                'var orgSel = document.getElementById("orgSelector");',
+                echo 'var orgSel = document.getElementById("orgSelector");',
                 'var option = document.createElement("option");',
                 'option.text = "'.$row["name"].'";',
                 'option.value = '.$row["id"].';',
-                'orgSel.add(option);',
-                '</script>';
+                'orgSel.add(option);';
             }
         }
     }

@@ -105,10 +105,16 @@ ini_set('display_errors', 1);
 
         <div id="organizationDiv">
             <label for="organizationSelector">Organization</label>
+            <select>
+                <option>Placeholder1</option>
+                <option>Placeholder2</option>
+                <option value="id?">Placeholder3</option>
+            </select>
             <button type ="button">Show All</button>
             <button type ="button">Add</button>
             <button type ="button">Edit</button>
             <button type ="button">Delete</button>
+        </div>
 
         <form method="post">
 

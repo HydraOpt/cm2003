@@ -133,7 +133,8 @@ ini_set('display_errors', 1);
                 <script type="text/javascript">
                     updateSelectors();
                 </script>
-            <?php $orgSelection = $_POST["orgSelector"]; ?>
+            <?php $orgSelection = $_POST["orgSelector"];
+            echo $orgSelection;?>
             </select>
             <br>
             <button type ="button">Show All</button>

@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
     $orgTable = "`organization`";
-    $orgSelection = $_POST["orgSelector"];
+
 
     //creating connection
     $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
@@ -123,22 +123,6 @@ ini_set('display_errors', 1);
 <body>
 
 
-
-    <?php
-    /*
-    echo "does it work at all";
-    $emailTo = "alessio.gadaleta@gmail.com";
-    $subject = "You are good!";
-    $body = "You really are. L ammiratore segreto";
-    $headers = "From: ammiratoremisterioso@callme.com";
-    if (mail($emailTo, $subject, $body, $headers)) {
-        echo "Mail sent successfully!";
-    } else {
-        echo "Mail not sent!";
-    }
-    */
-    ?>
-
     <div id="form">
         <h1>My Address Book</h1>
         <br>
@@ -148,6 +132,7 @@ ini_set('display_errors', 1);
             <select name="orgSelector" id="orgSelector" <!-- onchange="" -->>
                 <script type="text/javascript">
                     updateSelectors();
+                    <?php $orgSelection = $_POST["orgSelector"]; ?>
                 </script>
             </select>
             <br>

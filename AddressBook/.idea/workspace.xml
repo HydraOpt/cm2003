@@ -25,11 +25,11 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.2127922">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.39729398">
+              <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
               <folding>
                 <element signature="e#1583#1952#0#PHP" expanded="true" />
-                <marker date="1489943155647" expanded="true" signature="274:300" placeholder="SELECT * FRO..organization..." />
+                <marker date="1489943318911" expanded="true" signature="274:300" placeholder="SELECT * FRO..organization..." />
               </folding>
             </state>
           </provider>
@@ -187,11 +187,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2127922">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.39729398">
+          <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
           <folding>
             <element signature="e#1583#1952#0#PHP" expanded="true" />
-            <marker date="1489943155647" expanded="true" signature="274:300" placeholder="SELECT * FRO..organization..." />
+            <marker date="1489943318911" expanded="true" signature="274:300" placeholder="SELECT * FRO..organization..." />
           </folding>
         </state>
       </provider>

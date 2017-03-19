@@ -92,7 +92,7 @@ ini_set('display_errors', 1);
 
     <div id="form">
         <h1>My Address Book</h1>
-        <?php echo $result; ?>
+<!--        <?php //echo $result; ?> -->
 
         <form method="post">
 

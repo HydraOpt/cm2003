@@ -122,11 +122,10 @@ ini_set('display_errors', 1);
 
 <body>
 
-
     <div id="form">
         <h1>My Address Book</h1>
         <br>
-
+        <form method="post">
         <div id="organisationDiv">
             <label for="orgSelector">Organization</label>
             <select name="orgSelector" id="orgSelector" <!-- onchange="" -->>
@@ -158,6 +157,7 @@ ini_set('display_errors', 1);
             <button type ="button">Edit</button>
             <button type ="button">Delete</button>
         </div>
+            </form>
 
         <br>
 
@@ -191,6 +191,7 @@ ini_set('display_errors', 1);
             <input type="submit" name="submit" class="btn" value="submit"/>
 
         </div>
+    </form>
 
     <div id="outputDiv">
         </div>

@@ -177,7 +177,7 @@ ini_set('display_errors', 1);
     <script type="text/javascript">
         function updateSelectors() {
             var orgSel = document.getElementById("orgSelector");
-            org.options.length = 0;
+            orgSel.options.length = 0;
         }
     </script>
 

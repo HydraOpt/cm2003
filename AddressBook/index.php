@@ -92,8 +92,8 @@ ini_set('display_errors', 1);
 
     function orgSelChange(){
         var orgSel = document.getElementById("orgSelector");
-        var orgId = orgSel.options[orgSel.selectedIndex].value;
-        <?php printOrg(orgId) ?>
+        <?php $orgId ?> = orgSel.options[orgSel.selectedIndex].value;
+        <?php printOrg($orgId) ?>
     }
 
 </script>

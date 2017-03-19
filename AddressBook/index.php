@@ -73,6 +73,18 @@ ini_set('display_errors', 1);
             }
         }
     }
+
+    function printOrg($orgId){
+        $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
+        $query = "Select * FROM `organization` WHERE `id`=".$orgId;
+        $result=mysqli_query($link, $query);
+        $row =mysqli_fetch_array($result);
+        echo '<div class="orgDiv">',
+        '<p>Organisation name: '.$row["name"].'</p>',
+            '<p>Address: '.$row["address"].'</p>',
+            '<p>Phone Number: '.$row["phone_number"].'</p>',
+            '<p>Email: '.$row["email"].'</p>';
+    }
 ?>
 <script type="text/javascript">
     function updateSelectors() {
@@ -189,6 +201,7 @@ ini_set('display_errors', 1);
             </div>
 
             <input type="submit" name="submit" class="btn" value="submit"/>
+            <?php printOrg(1) ?>
 
 
         </div>

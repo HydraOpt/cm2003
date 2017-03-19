@@ -6,6 +6,10 @@ ini_set('display_errors', 1);
     mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
     echo mysqli_connect_error();
 /*
+    if(mysqli_connect_error()){
+        die("Cannot connect to db");
+    } */
+/*
     if($_POST["submit"]){
         $result = '<div>Form Submitted</div>';
     }
@@ -47,11 +51,12 @@ ini_set('display_errors', 1);
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <style>
-        .form {
+        #form {
             border: 1px solid black;
             margin-left: 10px;
             margin-top: 10px;
             padding: 10px;
+            background-color: #88bbd6;
         }
         </style>
 </head>
@@ -75,7 +80,7 @@ ini_set('display_errors', 1);
     */
     ?>
 
-    <div class="form">
+    <div id="form">
         <h1>My Address Book</h1>
         <?php echo $result; ?>
 

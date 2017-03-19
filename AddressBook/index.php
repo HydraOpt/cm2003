@@ -132,8 +132,8 @@ ini_set('display_errors', 1);
             <select name="orgSelector" id="orgSelector" <!-- onchange="" -->>
                 <script type="text/javascript">
                     updateSelectors();
-                    <?php $orgSelection = $_POST["orgSelector"]; ?>
                 </script>
+            <?php $orgSelection = $_POST["orgSelector"]; ?>
             </select>
             <br>
             <button type ="button">Show All</button>

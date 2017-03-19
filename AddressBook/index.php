@@ -4,6 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
     $orgTable = "`organization`";
+    $orgSelection = $_POST["orgSelector"];
 
     //creating connection
     $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
@@ -93,7 +94,7 @@ ini_set('display_errors', 1);
     /*function orgSelChange(){
         var orgSel = document.getElementById("orgSelector");
         var orgId = orgSel.options[orgSel.selectedIndex].value;
- 
+
     } */
 
 </script>
@@ -213,7 +214,7 @@ ini_set('display_errors', 1);
 </body>
 
 <footer>
-    <?php printOrg(1) ?>
+    <?php printOrg($orgSelection) ?>
 
 
 </footer>

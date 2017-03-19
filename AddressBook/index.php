@@ -125,14 +125,16 @@ ini_set('display_errors', 1);
     <div id="form">
         <h1>My Address Book</h1>
         <br>
-        <form method="post">
+
         <div id="organisationDiv">
+            <form method="post">
             <label for="orgSelector">Organization</label>
             <select name="orgSelector" id="orgSelector" <!-- onchange="" -->>
                 <script type="text/javascript">
                     updateSelectors();
                 </script>
             </select>
+            </form>
             <?php $orgSelection = $_POST["orgSelector"];
             echo $orgSelection;?>
             <br>
@@ -157,7 +159,7 @@ ini_set('display_errors', 1);
             <button type ="button">Edit</button>
             <button type ="button">Delete</button>
         </div>
-            </form>
+
 
         <br>
 

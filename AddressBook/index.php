@@ -103,12 +103,12 @@ ini_set('display_errors', 1);
     <div id="form">
         <h1>My Address Book</h1>
 
-        <div id="organizationDiv">
-            <label for="organizationSelector">Organization</label>
-            <select>
+        <div id="organisationDiv">
+            <label for="organisationSelector">Organization</label>
+            <select name="organisationSelector">
                 <option>Placeholder1</option>
                 <option>Placeholder2</option>
-                <option value="id?">Placeholder3</option>
+                <option value="id?" >Placeholder3</option>
             </select>
             <button type ="button">Show All</button>
             <button type ="button">Add</button>
@@ -116,10 +116,25 @@ ini_set('display_errors', 1);
             <button type ="button">Delete</button>
         </div>
 
+        <div id="peopleDiv">
+            <label for="peopleSelector">People</label>
+            <select name="peopleSelector">
+                <option>Placeholder1</option>
+                <option>Placeholder2</option>
+                <option value="id?" >Placeholder3</option>
+            </select>
+            <button type ="button">Show All</button>
+            <button type ="button">Add</button>
+            <button type ="button">Edit</button>
+            <button type ="button">Delete</button>
+        </div>
+
+
+
         <form method="post">
 
             <div class="form-group">
-                <label for="name">Organization Name:</label>
+                <label for="name">Organisation Name:</label>
                 <br>
                 <input type="text" name="name" class="form-elem">
             </div>

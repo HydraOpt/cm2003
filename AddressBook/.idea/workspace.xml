@@ -25,17 +25,17 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29616725">
-              <caret line="111" column="12" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.21022068">
+              <caret line="136" column="41" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
               <folding>
-                <marker date="1489949694422" expanded="true" signature="310:323" placeholder="SELECT * FRO..." />
-                <marker date="1489949694422" expanded="true" signature="310:324" placeholder="SELECT * FRO..." />
-                <marker date="1489949694422" expanded="true" signature="528:630" placeholder="INSERT INTO ..." />
-                <marker date="1489949694422" expanded="true" signature="1482:1545" placeholder="..." />
-                <marker date="1489949694422" expanded="true" signature="1490:1545" placeholder="..." />
-                <marker date="1489949694422" expanded="true" signature="1714:1890" placeholder="..." />
-                <marker date="1489949694422" expanded="true" signature="1730:1874" placeholder="{...}" />
-                <marker date="1489949694422" expanded="true" signature="1906:1936" placeholder="..." />
+                <marker date="1489950015573" expanded="true" signature="310:323" placeholder="SELECT * FRO..." />
+                <marker date="1489950015573" expanded="true" signature="310:324" placeholder="SELECT * FRO..." />
+                <marker date="1489950015573" expanded="true" signature="528:630" placeholder="INSERT INTO ..." />
+                <marker date="1489950015573" expanded="true" signature="1482:1545" placeholder="..." />
+                <marker date="1489950015573" expanded="true" signature="1490:1545" placeholder="..." />
+                <marker date="1489950015573" expanded="true" signature="1714:1890" placeholder="..." />
+                <marker date="1489950015573" expanded="true" signature="1730:1874" placeholder="{...}" />
+                <marker date="1489950015573" expanded="true" signature="1906:1936" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -193,17 +193,17 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29616725">
-          <caret line="111" column="12" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.21022068">
+          <caret line="136" column="41" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
           <folding>
-            <marker date="1489949694422" expanded="true" signature="310:323" placeholder="SELECT * FRO..." />
-            <marker date="1489949694422" expanded="true" signature="310:324" placeholder="SELECT * FRO..." />
-            <marker date="1489949694422" expanded="true" signature="528:630" placeholder="INSERT INTO ..." />
-            <marker date="1489949694422" expanded="true" signature="1482:1545" placeholder="..." />
-            <marker date="1489949694422" expanded="true" signature="1490:1545" placeholder="..." />
-            <marker date="1489949694422" expanded="true" signature="1714:1890" placeholder="..." />
-            <marker date="1489949694422" expanded="true" signature="1730:1874" placeholder="{...}" />
-            <marker date="1489949694422" expanded="true" signature="1906:1936" placeholder="..." />
+            <marker date="1489950015573" expanded="true" signature="310:323" placeholder="SELECT * FRO..." />
+            <marker date="1489950015573" expanded="true" signature="310:324" placeholder="SELECT * FRO..." />
+            <marker date="1489950015573" expanded="true" signature="528:630" placeholder="INSERT INTO ..." />
+            <marker date="1489950015573" expanded="true" signature="1482:1545" placeholder="..." />
+            <marker date="1489950015573" expanded="true" signature="1490:1545" placeholder="..." />
+            <marker date="1489950015573" expanded="true" signature="1714:1890" placeholder="..." />
+            <marker date="1489950015573" expanded="true" signature="1730:1874" placeholder="{...}" />
+            <marker date="1489950015573" expanded="true" signature="1906:1936" placeholder="..." />
           </folding>
         </state>
       </provider>

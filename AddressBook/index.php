@@ -90,11 +90,11 @@ ini_set('display_errors', 1);
 
     }
 
-    function orgSelChange(){
+    /*function orgSelChange(){
         var orgSel = document.getElementById("orgSelector");
-        <?php $orgId ?> = orgSel.options[orgSel.selectedIndex].value;
-        <?php printOrg($orgId) ?>
-    }
+        var orgId = orgSel.options[orgSel.selectedIndex].value;
+ 
+    } */
 
 </script>
 

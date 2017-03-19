@@ -60,6 +60,13 @@ ini_set('display_errors', 1);
         //todo without errors
     } */
 ?>
+<script type="text/javascript">
+    function updateSelectors() {
+        var orgSel = document.getElementById("orgSelector");
+        orgSel.options.length = 0;
+        console.log(orgSel);
+    }
+</script>
 
 
 <!doctype html>
@@ -174,13 +181,7 @@ ini_set('display_errors', 1);
 </body>
 
 <footer>
-    <script type="text/javascript">
-        function updateSelectors() {
-            var orgSel = document.getElementById("orgSelector");
-            orgSel.options.length = 0;
-            console.log(orgSel);
-        }
-    </script>
+
 
 </footer>
 

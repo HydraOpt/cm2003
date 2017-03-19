@@ -25,6 +25,7 @@ ini_set('display_errors', 1);
     */
 
     $qUpdate="UPDATE ".$tableName." SET `email` ='merlinthemage@camail.com' WHERE `id`=2 LIMIT 1";
+    mysqli_query($link, $qUpdate);
 /*
     if(mysqli_connect_error()){
         die("Cannot connect to db");

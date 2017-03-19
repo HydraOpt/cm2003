@@ -89,12 +89,13 @@ ini_set('display_errors', 1);
         <?php load(); ?>;
 
     }
-/*
+
     function orgSelChange(){
         var orgSel = document.getElementById("orgSelector");
         var orgId = orgSel.options[orgSel.selectedIndex].value;
+        <?php printOrg(orgId) ?>
     }
-    */
+
 </script>
 
 
@@ -115,7 +116,7 @@ ini_set('display_errors', 1);
             background-color: #88bbd6;
         }
         </style>
-    <?php printOrg(1) ?>
+
 </head>
 
 <body>
@@ -212,6 +213,7 @@ ini_set('display_errors', 1);
 </body>
 
 <footer>
+    <?php printOrg(1) ?>
 
 
 </footer>

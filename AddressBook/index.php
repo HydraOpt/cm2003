@@ -201,6 +201,7 @@ ini_set('display_errors', 1);
 
 <footer>
     <?php printOrg($orgSelection) ?>
+    <?php echo $_POST["orgSelector"]; ?>
 
 
 </footer>

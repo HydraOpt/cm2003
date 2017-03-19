@@ -3,8 +3,19 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-    mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
+    //creating connection
+    $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
     echo mysqli_connect_error();
+
+    //saving query input
+    $qSelectAll ="SELECT * FROM organization";
+
+    if($result=mysqli_query($link, $qSelectAll)){
+        $row = mysqli_fetch_array($result);
+        print_r("row");
+    } else {
+        echo "query failed";
+    }
 /*
     if(mysqli_connect_error()){
         die("Cannot connect to db");
@@ -53,7 +64,6 @@ ini_set('display_errors', 1);
     <style>
         #form {
             border: 1px solid black;
-            margin-left: 10px;
             margin-top: 10px;
             padding: 10px;
             background-color: #88bbd6;
@@ -89,26 +99,26 @@ ini_set('display_errors', 1);
             <div class="form-group">
                 <label for="organization">Organization Name:</label>
                 <br>
-                <input type="text" name="name" class="form-elem" placeholder="organization name">
+                <input type="text" name="name" class="form-elem">
             </div>
 
             <div class="form-group">
                 <label for="address">Address:</label>
                 <br>
-                <input type="text" name="address" class="form-elem" placeholder="organization main addres">
+                <input type="text" name="address" class="form-elem">
             </div>
 
 
             <div class="form-group">
                 <label for="phone">Telephone Number:</label>
                 <br>
-                <input type="text" name="phone" class="form-elem" placeholder="organization phone number">
+                <input type="text" name="phone" class="form-elem">
             </div>
 
             <div class="form-group">
                 <label for="email">Email:</label>
                 <br>
-                <input type="email" name="email" class="form-elem" placeholder="something@something.com">
+                <input type="email" name="email" class="form-elem">
             </div>
 
             <input type="submit" name="submit" class="btn" value="submit"/>

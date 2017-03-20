@@ -74,11 +74,11 @@
             }
         }
     }
-/*
+
     function loadPeople(){
-        $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
-        $orgId = $_POST[""]
-        $query = "";
+        global $link;
+        $orgId = $_POST["orgSelector"];
+        $query = "SELECT * FROM `people` WHERE orgId=".$orgId;
         if($result=mysqli_query($link, $query)) {
             while ($row = mysqli_fetch_array($result)) {
                 echo 'var orgSel = document.getElementById("peopleSelector");',
@@ -88,7 +88,7 @@
                 'orgSel.add(option);';
             }
         }
-    } */
+    }
 
     function printOrg($orgId){
         global $link;
@@ -147,7 +147,7 @@
             </select>
 
             <br>
-            <button type ="submit" name="loadOrg" value=1>Load</button>
+            <button type ="submit">Load</button>
             <button type ="submit">Add</button>
             <button type ="submit">Edit</button>
             <button type ="submit">Delete</button>

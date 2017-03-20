@@ -111,6 +111,10 @@
         <?php load(); ?>;
     }
 
+    function loadPeople(){
+        <?php loadPeople() ?>
+    }
+
 
 
 </script>
@@ -145,7 +149,7 @@
         <div id="organisationDiv">
             <form method="post">
             <label for="orgSelector">Organization</label>
-            <select name="orgSelector" id="orgSelector" <!-- onchange="" -->>
+            <select name="orgSelector" id="orgSelector"  onchange="loadPeople()" >
                 <script type="text/javascript">
                     updateSelectors();
                    /* loadPeople();*/
@@ -219,8 +223,7 @@
 </body>
 
 <footer>
-    <?php if($_POST)print_r($_POST);
-    echo $result;?>
+    <?php if($_POST)print_r($_POST); ?>
 
 
 </footer>

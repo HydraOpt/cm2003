@@ -76,8 +76,9 @@
         mysqli_close($link);
     }
 
-    function loadPeople(){
-        global $link;
+function loadPeople(){
+    global $link;
+    if($_POST["orgSelector"]){
         $orgId = $_POST["orgSelector"];
         $query = "SELECT * FROM `people` WHERE `orgId`=".$orgId;
         if($result=mysqli_query($link, $query)) {
@@ -85,15 +86,17 @@
             while ($row = mysqli_fetch_array($result)) {
                 echo 'var orgSel = document.getElementById("peopleSelector");',
                 'var option = document.createElement("option");',
-                    'option.text = "'.$row["name"].'";',
-                    'option.value = '.$row["idpeople"].';',
+                'option.text = "'.$row["name"].'";',
+                'option.value = '.$row["idpeople"].';',
                 'orgSel.add(option);';
             }
         }else {
             echo "nothing loaded";
-        }
-        mysqli_close($link);
-    }
+        }}
+    mysqli_close($link);
+}
+
+
 
     function printOrg($orgId){
         global $link;
@@ -111,7 +114,7 @@
         <?php load(); ?>;
     }
 
-   
+
 
 
 
@@ -221,7 +224,9 @@
 </body>
 
 <footer>
-    <?php if($_POST)print_r($_POST); ?>
+    <?php if($_POST)print_r($_POST);
+
+    ?>
 
 
 </footer>

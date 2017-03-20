@@ -151,6 +151,7 @@
         <br>
 
         <div id="peopleDiv">
+            <form method="post">
             <label for="peopleSelector">People</label>
             <select name="peopleSelector" id="peopleSelector">
             </select>
@@ -159,6 +160,7 @@
             <button type ="button">Add</button>
             <button type ="button">Edit</button>
             <button type ="button">Delete</button>
+            </form>
         </div>
 
 
@@ -205,7 +207,6 @@
 
 <footer>
     <?php
-    loadPeople();
     if($_POST)print_r($_POST);
 
 

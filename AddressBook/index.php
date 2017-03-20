@@ -75,11 +75,13 @@
         }
         mysqli_close($link);
     }
-/*
+
     function loadPeople(){
         global $link;
         $orgId = $_POST["orgSelector"];
+        echo($orgId);
         $query = "SELECT * FROM `people` WHERE orgId=".$orgId;
+        echo($query);
         if($result=mysqli_query($link, $query)) {
             print_r($result);
             while ($row = mysqli_fetch_array($result)) {
@@ -94,7 +96,7 @@
         }
         mysqli_close($link);
     }
-*/
+
 
     function printOrg($orgId){
         global $link;
@@ -220,8 +222,7 @@
 </body>
 
 <footer>
-    <?php if($_POST)print_r($_POST);
-    echo $result;?>
+    <?php if($_POST)print_r($_POST); ?>
 
 
 </footer>

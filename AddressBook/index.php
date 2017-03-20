@@ -73,7 +73,7 @@
                 'orgSel.add(option);';
             }
         }
-        mysqli_close($link);
+
     }
 
 function loadPeople(){
@@ -95,7 +95,7 @@ function loadPeople(){
         }else {
             echo "nothing loaded";
         }}
-    mysqli_close($link);
+
 }
 
 
@@ -106,7 +106,7 @@ function loadPeople(){
         $result=mysqli_query($link, $query);
         $row =mysqli_fetch_array($result);
         echo '<script>document.getElementById("outputDiv").innerHTML += "<p>Organisation name: '.$row["name"].'</p><p>Address: '.$row["address"].'</p><p>Phone Number: '.$row["phone_number"].'</p><p>Email: '.$row["email"].'</p>";</script>';
-        mysqli_close($link);
+        
     }
 ?>
 <script type="text/javascript">

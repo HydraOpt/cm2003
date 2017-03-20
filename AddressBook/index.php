@@ -213,7 +213,7 @@ ini_set('display_errors', 1);
 </body>
 
 <footer>
-    <?php if($_POST)echo $_POST; ?>
+    <?php if($_POST)print_r($_POST); ?>
 
 
 </footer>

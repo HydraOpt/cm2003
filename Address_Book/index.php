@@ -5,6 +5,7 @@
 
     $orgTable = "`organization`";
     $_POST["orgSelector"]=1;
+    $temp = 1;
 
     //creating connection
     $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
@@ -92,10 +93,11 @@
         var orgSel = document.getElementById("orgSelector");
         orgSel.options.length = 0;
         <?php load(); ?>;
+
     }
 
     function loadPeople(){
-        <?php loadPeople() ?>
+        <?php loadPeople() ?>;
     }
 
 
@@ -151,7 +153,6 @@
         <div id="peopleDiv">
             <label for="peopleSelector">People</label>
             <select name="peopleSelector" id="peopleSelector">
-                loadPeople();
             </select>
             <br>
             <button type ="button">Show All</button>

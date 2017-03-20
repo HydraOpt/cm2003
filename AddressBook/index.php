@@ -147,7 +147,7 @@ ini_set('display_errors', 1);
             </select>
 
             <br>
-            <button type ="submit" onclick="loadPeople()">Load</button>
+            <button type ="submit">Load</button>
             <button type ="submit">Add</button>
             <button type ="submit">Edit</button>
             <button type ="submit">Delete</button>

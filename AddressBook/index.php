@@ -75,6 +75,20 @@ ini_set('display_errors', 1);
         }
     }
 
+    function loadPeople(){
+        $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
+        $query = "Select P.idpeople, P.name, P.address, P.phone_number, P.email FROM `organization` AS O, `people` AS P WHERE O.id=P.orgId";
+        if($result=mysqli_query($link, $query)) {
+            while ($row = mysqli_fetch_array($result)) {
+                echo 'var orgSel = document.getElementById("peopleSelector");',
+                'var option = document.createElement("option");',
+                    'option.text = "' . $row["name"] . '";',
+                    'option.value = ' . $row["idpeople"] . ';',
+                'orgSel.add(option);';
+            }
+        }
+    }
+
     function printOrg($orgId){
         $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
         $query = "Select * FROM `organization` WHERE `id`=".$orgId;
@@ -88,14 +102,12 @@ ini_set('display_errors', 1);
         var orgSel = document.getElementById("orgSelector");
         orgSel.options.length = 0;
         <?php load(); ?>;
-
     }
 
-    /*function orgSelChange(){
-        var orgSel = document.getElementById("orgSelector");
-        var orgId = orgSel.options[orgSel.selectedIndex].value;
+    function loadPeople(){
+        <?php loadPeople() ?>
 
-    } */
+    }
 
 </script>
 
@@ -132,16 +144,16 @@ ini_set('display_errors', 1);
             <select name="orgSelector" id="orgSelector" <!-- onchange="" -->>
                 <script type="text/javascript">
                     updateSelectors();
+                    loadPeople();
                 </script>
             </select>
-            </form>
-            <?php $orgSelection = $_POST["orgSelector"];
-            echo $orgSelection;?>
+
             <br>
-            <button type ="button">Show All</button>
-            <button type ="button">Add</button>
-            <button type ="button">Edit</button>
-            <button type ="button">Delete</button>
+            <button type ="submit" onclick="loadPeople()">Load</button>
+            <button type ="submit">Add</button>
+            <button type ="submit">Edit</button>
+            <button type ="submit">Delete</button>
+            </form>
         </div>
 
         <br>
@@ -203,7 +215,6 @@ ini_set('display_errors', 1);
 </body>
 
 <footer>
-    <?php printOrg($orgSelection) ?>
     <?php echo $_POST["orgSelector"]; ?>
 
 

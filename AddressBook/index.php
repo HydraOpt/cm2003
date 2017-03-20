@@ -62,7 +62,7 @@ ini_set('display_errors', 1);
     } */
 
     function load() {
-        $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
+        global $link;
         $query = "Select * FROM `organization`";
         if($result=mysqli_query($link, $query)){
             while($row = mysqli_fetch_array($result)){
@@ -91,7 +91,7 @@ ini_set('display_errors', 1);
     } */
 
     function printOrg($orgId){
-        $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
+        global $link;
         $query = "Select * FROM `organization` WHERE `id`=".$orgId;
         $result=mysqli_query($link, $query);
         $row =mysqli_fetch_array($result);

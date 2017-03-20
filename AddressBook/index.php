@@ -81,6 +81,7 @@
         $orgId = $_POST["orgSelector"];
         $query = "SELECT * FROM `people` WHERE orgId=".$orgId;
         if($result=mysqli_query($link, $query)) {
+            print_r($result);
             while ($row = mysqli_fetch_array($result)) {
                 echo 'var orgSel = document.getElementById("peopleSelector");',
                 'var option = document.createElement("option");',

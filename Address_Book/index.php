@@ -4,8 +4,6 @@
     ini_set('display_errors', 1);
 
     $orgTable = "`organization`";
-    $_POST["orgSelector"]=1;
-    $temp = 1;
 
     //creating connection
     $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");

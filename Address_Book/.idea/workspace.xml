@@ -25,12 +25,12 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39357907">
-              <caret line="100" column="14" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+            <state vertical-scroll-proportion="-0.80856127">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
               <folding>
-                <marker date="1490023175071" expanded="true" signature="1597:1625" placeholder="Select * FRO..." />
-                <marker date="1490023175071" expanded="true" signature="2142:2182" placeholder="Select * FRO..." />
-                <marker date="1490023175071" expanded="true" signature="5661:5698" placeholder="SELECT * FRO..." />
+                <marker date="1490023246188" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
+                <marker date="1490023246188" expanded="true" signature="2098:2138" placeholder="Select * FRO..." />
+                <marker date="1490023246188" expanded="true" signature="5617:5654" placeholder="SELECT * FRO..." />
               </folding>
             </state>
           </provider>
@@ -175,12 +175,12 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39357907">
-          <caret line="100" column="14" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+        <state vertical-scroll-proportion="-0.80856127">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
           <folding>
-            <marker date="1490023175071" expanded="true" signature="1597:1625" placeholder="Select * FRO..." />
-            <marker date="1490023175071" expanded="true" signature="2142:2182" placeholder="Select * FRO..." />
-            <marker date="1490023175071" expanded="true" signature="5661:5698" placeholder="SELECT * FRO..." />
+            <marker date="1490023246188" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
+            <marker date="1490023246188" expanded="true" signature="2098:2138" placeholder="Select * FRO..." />
+            <marker date="1490023246188" expanded="true" signature="5617:5654" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>

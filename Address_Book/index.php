@@ -77,18 +77,20 @@
 
     function loadPeople(){
         global $link;
-        $orgId = $_POST["orgSelector"];
-        $query = "SELECT * FROM `people` WHERE `orgId`=".$orgId.";";
-        if($result=mysqli_query($link, $query)) {
-            while ($row = mysqli_fetch_array($result)) {
-                echo 'var peoSel = document.getElementById("peopleSelector");',
-                'var option = document.createElement("option");',
-                    'option.text = "'.$row["name"].'";',
-                    'option.value = '.$row["idpeople"].';',
+        if($_POST["orgSelector"]) {
+            $orgId = $_POST["orgSelector"];
+            $query = "SELECT * FROM `people` WHERE `orgId`=" . $orgId . ";";
+            if ($result = mysqli_query($link, $query)) {
+                while ($row = mysqli_fetch_array($result)) {
+                    echo 'var peoSel = document.getElementById("peopleSelector");',
+                    'var option = document.createElement("option");',
+                        'option.text = "' . $row["name"] . '";',
+                        'option.value = ' . $row["idpeople"] . ';',
                     'peoSel.add(option);';
+                }
+            } else {
+                echo "nothing loaded";
             }
-        }else {
-            echo "nothing loaded";
         }
     }
 

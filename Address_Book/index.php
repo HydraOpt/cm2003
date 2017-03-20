@@ -204,8 +204,10 @@
 </body>
 
 <footer>
-    <?php if($_POST)print_r($_POST);
+    <?php
     loadPeople();
+    if($_POST)print_r($_POST);
+
 
     function loadPeople(){
         global $link;

@@ -78,9 +78,9 @@
     function loadPeople(){
         global $link;
         $orgId = $_POST["orgSelector"];
-        echo($orgId);
-        $query = "SELECT * FROM `people` WHERE orgId=".$orgId;
-        echo($query);
+        print_r($orgId);
+        $query = "SELECT * FROM `people` WHERE `orgId`=".$orgId;
+        print_r($query);
         if($result=mysqli_query($link, $query)) {
             print_r($result);
             while ($row = mysqli_fetch_array($result)) {

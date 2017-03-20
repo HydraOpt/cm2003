@@ -149,10 +149,10 @@
         <div id="organisationDiv">
             <form method="post">
             <label for="orgSelector">Organization</label>
-            <select name="orgSelector" id="orgSelector"  onchange="loadPeople()" >
+            <select name="orgSelector" id="orgSelector" >
                 <script type="text/javascript">
                     updateSelectors();
-                   /* loadPeople();*/
+                   /* loadPeople(); */
                 </script>
             </select>
 

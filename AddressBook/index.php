@@ -64,16 +64,15 @@
     function load() {
         global $link;
         $query = "Select * FROM `organization`";
-        if($result=mysqli_query($link, $query)){
-            while($row = mysqli_fetch_array($result)){
+        if($result=mysqli_query($link, $query)) {
+            while ($row = mysqli_fetch_array($result)) {
                 echo 'var orgSel = document.getElementById("orgSelector");',
                 'var option = document.createElement("option");',
-                'option.text = "'.$row["name"].'";',
-                'option.value = '.$row["id"].';',
+                    'option.text = "' . $row["name"] . '";',
+                    'option.value = ' . $row["id"] . ';',
                 'orgSel.add(option);';
             }
         }
-        mysqli_close($link);
     }
 
     function loadPeople(){
@@ -94,7 +93,6 @@
         }else {
             echo "nothing loaded";
         }
-        mysqli_close($link);
     }
 
 
@@ -104,7 +102,6 @@
         $result=mysqli_query($link, $query);
         $row =mysqli_fetch_array($result);
         echo '<script>document.getElementById("outputDiv").innerHTML += "<p>Organisation name: '.$row["name"].'</p><p>Address: '.$row["address"].'</p><p>Phone Number: '.$row["phone_number"].'</p><p>Email: '.$row["email"].'</p>";</script>';
-        mysqli_close($link);
     }
 ?>
 <script type="text/javascript">

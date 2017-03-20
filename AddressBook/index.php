@@ -89,6 +89,8 @@
                     'option.value = '.$row["idpeople"].';',
                 'orgSel.add(option);';
             }
+        }else {
+            echo "nothing loaded";
         }
         mysqli_close($link);
     }
@@ -217,7 +219,8 @@
 </body>
 
 <footer>
-    <?php if($_POST)print_r($_POST); ?>
+    <?php if($_POST)print_r($_POST);
+    echo $result;?>
 
 
 </footer>

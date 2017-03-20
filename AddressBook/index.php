@@ -82,8 +82,8 @@ ini_set('display_errors', 1);
             while ($row = mysqli_fetch_array($result)) {
                 echo 'var orgSel = document.getElementById("peopleSelector");',
                 'var option = document.createElement("option");',
-                    'option.text = "' . $row["name"] . '";',
-                    'option.value = ' . $row["idpeople"] . ';',
+                    'option.text = "'.$row["name"].'";',
+                    'option.value = '.$row["idpeople"].';',
                 'orgSel.add(option);';
             }
         }

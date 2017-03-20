@@ -111,9 +111,7 @@
         <?php load(); ?>;
     }
 
-    function loadPeople(){
-        <?php loadPeople() ?>
-    }
+   
 
 
 

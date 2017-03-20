@@ -77,8 +77,7 @@ ini_set('display_errors', 1);
 
     function loadPeople(){
         $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
-        $query = "Select people.idpeople, people.name, people.address, people.phone_number, people.email FROM `organization`, `people` WHERE organization.id = people.orgId";
-        echo $query;
+        $query = "Select people.idpeople, people.name, people.address, people.phone_number, people.email FROM `organization`, `people` WHERE `organization.id` = `people.orgId`";
         if($result=mysqli_query($link, $query)) {
             while ($row = mysqli_fetch_array($result)) {
                 echo 'var orgSel = document.getElementById("peopleSelector");',

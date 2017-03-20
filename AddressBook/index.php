@@ -106,7 +106,7 @@ function loadPeople(){
         $result=mysqli_query($link, $query);
         $row =mysqli_fetch_array($result);
         echo '<script>document.getElementById("outputDiv").innerHTML += "<p>Organisation name: '.$row["name"].'</p><p>Address: '.$row["address"].'</p><p>Phone Number: '.$row["phone_number"].'</p><p>Email: '.$row["email"].'</p>";</script>';
-
+        
     }
 ?>
 <script type="text/javascript">
@@ -116,7 +116,9 @@ function loadPeople(){
         <?php load(); ?>;
     }
 
-
+    function loadPeople() {
+        <?php loadPeople() ?>;
+    }
 
 
 
@@ -152,7 +154,7 @@ function loadPeople(){
         <div id="organisationDiv">
             <form method="post">
             <label for="orgSelector">Organization</label>
-            <select name="orgSelector" id="orgSelector"  >
+            <select name="orgSelector" id="orgSelector" onchange="loadPeople()" >
                 <script type="text/javascript">
                     updateSelectors();
                    /* loadPeople(); */

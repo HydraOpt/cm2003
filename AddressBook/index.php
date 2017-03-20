@@ -104,11 +104,11 @@ ini_set('display_errors', 1);
         orgSel.options.length = 0;
         <?php load(); ?>;
     }
-
+/*
     function loadPeople(){
         <?php loadPeople() ?>
 
-    }
+    } */
 
 </script>
 

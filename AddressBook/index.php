@@ -149,7 +149,6 @@
             <select name="orgSelector" id="orgSelector" <!-- onchange="" -->>
                 <script type="text/javascript">
                     updateSelectors();
-                    loadPeople();
                 </script>
             </select>
 

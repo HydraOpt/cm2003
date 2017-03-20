@@ -1,16 +1,16 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
 
     $orgTable = "`organization`";
 
-
     //creating connection
     $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
+    //error check
     echo mysqli_connect_error();
 
-    //saving query input
+    /* //saving query input
     $qSelectAll ="SELECT * FROM ".$orgTable;
 
     if($result=mysqli_query($link, $qSelectAll)){
@@ -18,15 +18,15 @@ ini_set('display_errors', 1);
         print_r($row);
     } else {
         echo "query failed";
-    }
+    } */
 
     /*
     $qInsert = "INSERT INTO `organization`(`name`, `address`, `phone_number`) VALUES('Camelot', 'Cornwall', '0000001')";
     mysqli_query($link, $qInsert);
     */
 
-    $qUpdate="UPDATE ".$orgTable." SET `email` ='merlinthemage@camail.com' WHERE `id`=11 LIMIT 1";
-    mysqli_query($link, $qUpdate);
+    /*$qUpdate="UPDATE ".$orgTable." SET `email` ='merlinthemage@camail.com' WHERE `id`=11 LIMIT 1";
+    mysqli_query($link, $qUpdate); */
 /*
     if(mysqli_connect_error()){
         die("Cannot connect to db");

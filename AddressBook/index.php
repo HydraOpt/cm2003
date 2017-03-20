@@ -63,7 +63,7 @@
 
     function load() {
         global $link;
-        $query = "Select * FROM `organization`;";
+        $query = "Select * FROM `organization`";
         if($result=mysqli_query($link, $query)){
             while($row = mysqli_fetch_array($result)){
                 echo 'var orgSel = document.getElementById("orgSelector");',
@@ -73,32 +73,27 @@
                 'orgSel.add(option);';
             }
         }
-
+        mysqli_close($link);
     }
 
-function loadPeople(){
-    global $link;
-    if($_POST["orgSelector"]){
+    function loadPeople(){
+        global $link;
         $orgId = $_POST["orgSelector"];
-        print_r($orgId);
-        $query = "SELECT * FROM `people` WHERE orgId=".$orgId.";";
-        print_r($query);
+        $query = "SELECT * FROM `people` WHERE orgId=".$orgId;
         if($result=mysqli_query($link, $query)) {
             print_r($result);
             while ($row = mysqli_fetch_array($result)) {
                 echo 'var orgSel = document.getElementById("peopleSelector");',
                 'var option = document.createElement("option");',
-                'option.text = "'.$row["name"].'";',
-                'option.value = '.$row["idpeople"].';',
+                    'option.text = "'.$row["name"].'";',
+                    'option.value = '.$row["idpeople"].';',
                 'orgSel.add(option);';
             }
         }else {
             echo "nothing loaded";
-        }}
-
-}
-
-
+        }
+        mysqli_close($link);
+    }
 
     function printOrg($orgId){
         global $link;
@@ -106,7 +101,7 @@ function loadPeople(){
         $result=mysqli_query($link, $query);
         $row =mysqli_fetch_array($result);
         echo '<script>document.getElementById("outputDiv").innerHTML += "<p>Organisation name: '.$row["name"].'</p><p>Address: '.$row["address"].'</p><p>Phone Number: '.$row["phone_number"].'</p><p>Email: '.$row["email"].'</p>";</script>';
-        
+        mysqli_close($link);
     }
 ?>
 <script type="text/javascript">
@@ -114,10 +109,6 @@ function loadPeople(){
         var orgSel = document.getElementById("orgSelector");
         orgSel.options.length = 0;
         <?php load(); ?>;
-    }
-
-    function loadPeople() {
-        <?php loadPeople() ?>;
     }
 
 
@@ -154,10 +145,10 @@ function loadPeople(){
         <div id="organisationDiv">
             <form method="post">
             <label for="orgSelector">Organization</label>
-            <select name="orgSelector" id="orgSelector" onchange="loadPeople()" >
+            <select name="orgSelector" id="orgSelector" <!-- onchange="" -->>
                 <script type="text/javascript">
                     updateSelectors();
-                   /* loadPeople(); */
+                   /* loadPeople();*/
                 </script>
             </select>
 
@@ -229,8 +220,7 @@ function loadPeople(){
 
 <footer>
     <?php if($_POST)print_r($_POST);
-
-    ?>
+    echo $result;?>
 
 
 </footer>

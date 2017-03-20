@@ -151,6 +151,7 @@
         <div id="peopleDiv">
             <label for="peopleSelector">People</label>
             <select name="peopleSelector" id="peopleSelector">
+                loadPeople();
             </select>
             <br>
             <button type ="button">Show All</button>

@@ -97,6 +97,8 @@
     }
 
     function loadPeople(){
+        var peoSel = document.getElementById("peopleSelector");
+        peoSel.options.length = 0;
         <?php loadPeople() ?>;
     }
 

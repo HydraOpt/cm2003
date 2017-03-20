@@ -111,6 +111,10 @@
         <?php load(); ?>;
     }
 
+    function loadPeople(){
+        <?php loadPeople() ?>
+    }
+
 
 
 </script>
@@ -153,7 +157,7 @@
             </select>
 
             <br>
-            <button type ="submit">Load</button>
+            <button type ="submit" onclick="loadPeople()">Load</button>
             <button type ="submit">Add</button>
             <button type ="submit">Edit</button>
             <button type ="submit">Delete</button>

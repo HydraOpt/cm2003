@@ -165,7 +165,7 @@
 
         <div id="peopleDiv">
             <label for="peopleSelector">People</label>
-            <select name="peopleSelector">
+            <select name="peopleSelector" id="peopleSelector">
                 <option>Placeholder1</option>
                 <option>Placeholder2</option>
                 <option value="id?" >Placeholder3</option>

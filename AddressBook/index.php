@@ -142,7 +142,7 @@ ini_set('display_errors', 1);
             <select name="orgSelector" id="orgSelector" <!-- onchange="" -->>
                 <script type="text/javascript">
                     updateSelectors();
-                    loadPeople();
+                   /* loadPeople();*/
                 </script>
             </select>
 

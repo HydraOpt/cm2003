@@ -85,7 +85,7 @@
                 'var option = document.createElement("option");',
                     'option.text = "'.$row["name"].'";',
                     'option.value = '.$row["idpeople"].';',
-                'peoSel.add(option);';
+                    'peoSel.add(option);';
             }
         }else {
             echo "nothing loaded";

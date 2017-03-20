@@ -75,24 +75,7 @@
         }
     }
 
-    function loadPeople(){
-        global $link;
-        if($_POST["orgSelector"]) {
-            $orgId = $_POST["orgSelector"];
-            $query = "SELECT * FROM `people` WHERE `orgId`=" . $orgId . ";";
-            if ($result = mysqli_query($link, $query)) {
-                while ($row = mysqli_fetch_array($result)) {
-                    echo 'var peoSel = document.getElementById("peopleSelector");',
-                    'var option = document.createElement("option");',
-                        'option.text = "' . $row["name"] . '";',
-                        'option.value = ' . $row["idpeople"] . ';',
-                    'peoSel.add(option);';
-                }
-            } else {
-                echo "nothing loaded";
-            }
-        }
-    }
+
 
 
     function printOrg($orgId){
@@ -218,7 +201,26 @@
 </body>
 
 <footer>
-    <?php if($_POST)print_r($_POST); ?>
+    <?php if($_POST)print_r($_POST);
+
+    function loadPeople(){
+        global $link;
+        if($_POST["orgSelector"]) {
+            $orgId = $_POST["orgSelector"];
+            $query = "SELECT * FROM `people` WHERE `orgId`=" . $orgId . ";";
+            if ($result = mysqli_query($link, $query)) {
+                while ($row = mysqli_fetch_array($result)) {
+                    echo 'var peoSel = document.getElementById("peopleSelector");',
+                    'var option = document.createElement("option");',
+                        'option.text = "' . $row["name"] . '";',
+                        'option.value = ' . $row["idpeople"] . ';',
+                    'peoSel.add(option);';
+                }
+            } else {
+                echo "nothing loaded";
+            }
+        }
+    }?>
 
 
 </footer>

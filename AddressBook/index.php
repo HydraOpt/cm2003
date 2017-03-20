@@ -79,7 +79,7 @@
         global $link;
         $orgId = $_POST["orgSelector"];
         print_r($orgId);
-        $query = "SELECT * FROM `people` WHERE `orgId`=".$orgId;
+        $query = "SELECT * FROM `people` WHERE `orgId`=".$orgId.";";
         print_r($query);
         if($result=mysqli_query($link, $query)) {
             print_r($result);

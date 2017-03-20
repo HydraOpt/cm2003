@@ -75,7 +75,7 @@
         }
         mysqli_close($link);
     }
-
+/*
     function loadPeople(){
         global $link;
         $orgId = $_POST["orgSelector"];
@@ -94,6 +94,7 @@
         }
         mysqli_close($link);
     }
+*/
 
     function printOrg($orgId){
         global $link;

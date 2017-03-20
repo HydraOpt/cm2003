@@ -105,9 +105,6 @@ ini_set('display_errors', 1);
         <?php load(); ?>;
     }
 
-    function loadPeople(){
-        <?php loadPeople() ?>
-    }
 
 
 </script>

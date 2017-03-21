@@ -128,6 +128,7 @@
     }
 
     function deleteOrg(){
+        alert('Delete Start');
         <?php deleteCurrOrg() ?>;
 
     }

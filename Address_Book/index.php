@@ -106,7 +106,7 @@
     function inputVisible(){
         var group = document.getElementsByClassName("form-group");
         for(var i = 0; i < group.length; i++){
-            group[i].style.display = "inline";
+            group[i].style.display = "block";
         }
     }
 

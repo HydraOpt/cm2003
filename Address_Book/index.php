@@ -61,7 +61,7 @@
         //todo without errors
     } */
 
-    function load(){
+    function load() {
         global $link;
         $query = "SELECT * FROM `organization`;";
         if($result=mysqli_query($link, $query)) {
@@ -75,19 +75,22 @@
         }
     }
 
-    function deleteCurrOrg(){
+    function deleteCurrOrg()
+    {
+        echo "alert('delete start');";
         global $link;
         if ($_POST) {
+            echo "alert('if post');";
             if ($_POST["orgSelector"]) {
+                echo "alert('if org sel');";
                 $orgId = $_POST["orgSelector"];
-                $delquery = "DELETE FROM `organization` WHERE `id`=".$orgId.";";
-                if(mysqli_query($link, $delquery)){
-                    echo "alert('deletion successful');",
-                        "updateSelectors();",
-                        "loadPeople();";
+                $query = "DELETE FROM `organization` WHERE `id`=".$orgId.";";
+                if(mysqli_query($link, $query)){
+                    echo "alert('success');";
                 } else {
-                    echo "alert('deletion fail');";
+                    echo "alert('fail');";
                 }
+
             }
         }
     }
@@ -170,21 +173,21 @@
 
         <div id="organisationDiv">
             <form method="post">
-                <button type="submit" id="loadOrgs" onclick="updateSelectors()">Load Organisations</button>
+                <button type="submit" onclick="updateSelectors()">Load Organisations</button>
                 <br>
 
                 <label for="orgSelector">Organization</label>
-                <select name="orgSelector" id="orgSelector">
+                <select name="orgSelector" id="orgSelector" <!-- onchange="" -->>
                 <script type="text/javascript">
                     updateSelectors();
                 </script>
             </select>
 
             <br>
-            <button type ="submit" id="loadOrg">Load</button>
-            <button type ="button" name="addOrgBtn" id="addOrgBtn" onclick='addOrg()'>Add</button>
+            <button type ="submit">Load</button>
+            <button type ="button" onclick="addOrg()">Add</button>
             <button type ="submit">Edit</button>
-            <button type ="button" name="orgDeletion" id="orgDeletion" onclick="deleteOrg()">Delete</button>
+            <button type ="button" onclick="deleteOrg()">Delete</button>
 
         <br>
 
@@ -259,7 +262,7 @@
         if ($_POST) {
             if ($_POST["orgSelector"]) {
                 $orgId = $_POST["orgSelector"];
-                $query = "SELECT * FROM `people` WHERE `orgId`=".$orgId.";";
+                $query = "SELECT * FROM `people` WHERE `orgId`=" . $orgId . ";";
                 if ($result = mysqli_query($link, $query)) {
                     while ($row = mysqli_fetch_array($result)) {
                         echo 'var peoSel = document.getElementById("peopleSelector");',

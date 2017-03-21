@@ -83,6 +83,7 @@
 
 
 
+
 ?>
 <script type="text/javascript">
     function updateSelectors() {
@@ -96,6 +97,10 @@
         var peoSel = document.getElementById("peopleSelector");
         peoSel.options.length = 0;
         <?php loadPeople() ?>;
+    }
+
+    function addOrg(){
+        
     }
 
 
@@ -143,7 +148,7 @@
 
             <br>
             <button type ="submit">Load</button>
-            <button type ="submit">Add</button>
+            <button type ="button" onclick="addOrg()">Add</button>
             <button type ="submit">Edit</button>
             <button type ="submit">Delete</button>
 

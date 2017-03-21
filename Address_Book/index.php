@@ -82,7 +82,9 @@
                 $orgId = $_POST["orgSelector"];
                 $delquery = "DELETE FROM `organization` WHERE `id`=".$orgId.";";
                 if(mysqli_query($link, $delquery)){
-                    echo "alert('deletion successful');";
+                    echo "alert('deletion successful');",
+                        "updateSelectors();",
+                        "loadPeople();";
                 } else {
                     echo "alert('deletion fail');";
                 }
@@ -128,14 +130,6 @@
 
     function deleteOrg(){
         <?php deleteCurrOrg() ?>;
-    }
-
-    function printCurrentOrg(){
-        <?php if($_POST){
-                if($_POST["orgSelector"]){
-                printOrg($_POST["orgSelector"]);
-                }
-                } ?>
     }
 
 
@@ -187,9 +181,10 @@
             </select>
 
             <br>
-            <button type ="submit" id="loadOrg" onclick="printCurrentOrg()">Load</button>
-            <button type ="button" name="addOrgBtn" id="addOrgBtn" onclick="addOrg()">Add</button>
-
+            <button type ="submit" id="loadOrg">Load</button>
+            <button type ="button" name="addOrgBtn" id="addOrgBtn" onclick='addOrg()'>Add</button>
+            <button type ="submit">Edit</button>
+            <button type ="button" name="orgDeletion" id="orgDeletion" onclick="deleteOrg()">Delete</button>
 
         <br>
 
@@ -245,12 +240,6 @@
 
     <div id="outputDiv">
         </div>
-    <div>
-        <form method="post">
-            <button type ="submit">Edit</button>
-            <button type ="button" name="orgDeletion" id="orgDeletion" onclick="deleteOrg()">Delete</button>
-            </form>
-        </div>
 
     <script type="text/javascript">
         loadPeople();
@@ -264,7 +253,8 @@
     <?php
     if($_POST)print_r($_POST);
 
-    function loadPeople(){
+    function loadPeople()
+    {
         global $link;
         if ($_POST) {
             if ($_POST["orgSelector"]) {
@@ -282,6 +272,8 @@
                     echo "nothing loaded";
                 }
 
+
+                printOrg($orgId);
             }
         }
     }

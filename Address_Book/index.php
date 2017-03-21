@@ -77,16 +77,13 @@
 
     function deleteCurrOrg()
     {
-        echo "alert('delete start');";
         global $link;
         if ($_POST) {
-            echo "alert('if post');";
             if ($_POST["orgSelector"]) {
-                echo "alert('if org sel');";
                 $orgId = $_POST["orgSelector"];
                 $query = "DELETE FROM `organization` WHERE `id`=".$orgId.";";
                 if(mysqli_query($link, $query)){
-                    echo "alert('success');";
+                    echo "alert('Delete Success');";
                 } else {
                     echo "alert('fail');";
                 }

@@ -82,7 +82,13 @@
 
 
 
-
+    function printOrg($orgId){
+        global $link;
+        $query = "Select * FROM `organization` WHERE `id`=".$orgId.";";
+        $result=mysqli_query($link, $query);
+        $row =mysqli_fetch_array($result);
+        echo '<script>document.getElementById("outputDiv").innerHTML += "<p>Organisation name: '.$row["name"].'</p><p>Address: '.$row["address"].'</p><p>Phone Number: '.$row["phone_number"].'</p><p>Email: '.$row["email"].'</p>";</script>';
+    }
 ?>
 <script type="text/javascript">
     function updateSelectors() {
@@ -228,28 +234,14 @@
                     echo "nothing loaded";
                 }
 
-                printOrg();
-            }
-        }
-    }
-
-    function printOrg()
-    {
-        global $link;
-        if ($_POST) {
-            if ($_POST["orgSelector"]) {
-                $query = "Select * FROM `organization` WHERE `id`=" . $_POST["orgSelector"] . ";";
-                if ($result = mysqli_query($link, $query)) {
-                    while ($row = mysqli_fetch_array($result)) {
-                        echo '<script>document.getElementById("outputDiv").innerHTML += "<p>Organisation name: ' . $row["name"] . '</p><p>Address: ' . $row["address"] . '</p><p>Phone Number: ' . $row["phone_number"] . '</p><p>Email: ' . $row["email"] . '</p>";</script>';
-                    }
-                }
+                //printOrg($orgId);
             }
         }
     }
 
 
     ?>
+
 
 </footer>
 

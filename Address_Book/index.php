@@ -93,6 +93,8 @@ function loadPeople(){
         } else {
             echo "nothing loaded";
         }
+
+        printOrg($orgId);
     }
 }
 

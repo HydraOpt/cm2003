@@ -63,7 +63,7 @@
 
     function load() {
         global $link;
-        $query = "Select * FROM `organization`;";
+        $query = "SELECT * FROM `organization`;";
         if($result=mysqli_query($link, $query)) {
             while ($row = mysqli_fetch_array($result)) {
                 echo 'var orgSel = document.getElementById("orgSelector");',
@@ -71,6 +71,22 @@
                     'option.text = "' . $row["name"] . '";',
                     'option.value = ' . $row["id"] . ';',
                 'orgSel.add(option);';
+            }
+        }
+    }
+
+    function deleteCurrOrg()
+    {
+        global $link;
+        if ($_POST) {
+            if ($_POST["orgSelector"]) {
+                $orgId = $_POST["orgSelector"];
+                $query = "DELETE FROM `organization` WHERE `orgId`=" . $orgId . ";";
+                if ($result = mysqli_query($link, $query)) {
+                    print_r("Delete Success");
+                }
+            } else {
+                print_r("Delete Fail");
             }
         }
     }
@@ -109,6 +125,10 @@
         for(var i = 0; i < group.length; i++){
             group[i].style.display = "block";
         }
+    }
+
+    function deleteOrg(){
+
     }
 
 
@@ -163,7 +183,7 @@
             <button type ="submit">Load</button>
             <button type ="button" onclick="addOrg()">Add</button>
             <button type ="submit">Edit</button>
-            <button type ="submit">Delete</button>
+            <button type ="submit" onclick="deleteOrg()">Delete</button>
 
         <br>
 

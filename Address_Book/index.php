@@ -130,6 +130,10 @@
         <?php deleteCurrOrg() ?>;
     }
 
+    function printCurrentOrg(){
+        <?php printOrg($_POST["orgSelector"]); ?>
+    }
+
 
 
 </script>
@@ -181,8 +185,7 @@
             <br>
             <button type ="submit" id="loadOrg">Load</button>
             <button type ="button" name="addOrgBtn" id="addOrgBtn" onclick='addOrg()'>Add</button>
-            <button type ="submit">Edit</button>
-            <button type ="button" name="orgDeletion" id="orgDeletion" onclick="deleteOrg()">Delete</button>
+
 
         <br>
 
@@ -238,6 +241,12 @@
 
     <div id="outputDiv">
         </div>
+    <div>
+        <form method="post">
+            <button type ="submit">Edit</button>
+            <button type ="button" name="orgDeletion" id="orgDeletion" onclick="deleteOrg()">Delete</button>
+            </form>
+        </div>
 
     <script type="text/javascript">
         loadPeople();
@@ -268,7 +277,7 @@
                 } else {
                     echo "nothing loaded";
                 }
-                printOrg($orgId);
+
             }
         }
     }

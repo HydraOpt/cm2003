@@ -128,6 +128,12 @@
         .form-group {
             display: none;
         }
+
+        br {
+            display: block;
+            margin-top: 10px;
+        }
+        
         </style>
 
 </head>

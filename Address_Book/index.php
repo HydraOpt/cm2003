@@ -181,9 +181,10 @@
 
         <br>
 
-        <form method="post">
+        <form action="insertOrg.php" method="post">
 
             <div class="form-group">
+
                 <label id="title">Default</label>
                 <br>
                 <label for="name">Name:</label>

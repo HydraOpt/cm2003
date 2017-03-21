@@ -4,6 +4,8 @@
     ini_set('display_errors', 1);
 
     $orgTable = "`organization`";
+    $orgElem;
+    $people;
 
     //creating connection
     $link = mysqli_connect("eu-cdbr-azure-north-e.cloudapp.net", "befc77d2972871", "032b4371", "big_daddy");
@@ -63,8 +65,10 @@
 
     function load() {
         global $link;
+        global $orgElem;
         $query = "Select * FROM `organization`;";
         if($result=mysqli_query($link, $query)) {
+            $orgElem = $result;
             while ($row = mysqli_fetch_array($result)) {
                 echo 'var orgSel = document.getElementById("orgSelector");',
                 'var option = document.createElement("option");',
@@ -209,6 +213,7 @@
 <footer>
     <?php
     if($_POST)print_r($_POST);
+    print_r($orgElem);
 
 
     function loadPeople(){

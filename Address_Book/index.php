@@ -10,57 +10,6 @@
     //error check
     echo mysqli_connect_error();
 
-    /* //saving query input
-    $qSelectAll ="SELECT * FROM ".$orgTable;
-
-    if($result=mysqli_query($link, $qSelectAll)){
-        $row = mysqli_fetch_array($result);
-        print_r($row);
-    } else {
-        echo "query failed";
-    } */
-
-    /*
-    $qInsert = "INSERT INTO `organization`(`name`, `address`, `phone_number`) VALUES('Camelot', 'Cornwall', '0000001')";
-    mysqli_query($link, $qInsert);
-    */
-
-    /*$qUpdate="UPDATE ".$orgTable." SET `email` ='merlinthemage@camail.com' WHERE `id`=11 LIMIT 1";
-    mysqli_query($link, $qUpdate); */
-/*
-    if(mysqli_connect_error()){
-        die("Cannot connect to db");
-    } */
-/*
-    if($_POST["submit"]){
-        $result = '<div>Form Submitted</div>';
-    }
-    else {
-        $result = 'Something Wrong';
-    }
-
-    if(!$_POST["name"]){
-        $error ="<br />A name is required";
-    }
-
-    if(!$_POST["phone"]){
-        $error .="<br />Phone is missing";
-    }
-
-    if(!$_POST["address"]){
-         $error .="<br />Address is missing";
-    }
-
-    if(!$_POST["email"]){
-         $error .="<br />Email is missing";
-    }
-
-    if($error){
-        $result='<div> Error: '.$error.'</div>';
-    } else {
-        //todo without errors
-    } */
-
     function load() {
         global $link;
         $query = "SELECT * FROM `organization`;";
@@ -93,14 +42,6 @@
     }
 
 
-
-
-
-
-
-
-
-
 ?>
 <script type="text/javascript">
     function updateSelectors() {
@@ -118,6 +59,13 @@
 
     function addOrg(){
         document.getElementById("title").innerText = "Add New Organisation";
+        document.getElementById("inputForm").action = "insertOrg.php";
+        inputVisible();
+    }
+
+    function addPerson(){
+        document.getElementById("title").innerText = "Add New Person";
+        document.getElementById("inputForm").action = "insertPerson.php";
         inputVisible();
     }
 
@@ -193,7 +141,7 @@
             </select>
             <br>
             <button type ="submit">Load Person</button>
-            <button type ="button">Add</button>
+            <button type ="button" onclick="addPerson()">Add</button>
             <button type ="button">Edit</button>
             <button type ="button">Delete</button>
             </form>
@@ -202,7 +150,7 @@
 
         <br>
 
-        <form action="insertOrg.php" method="post">
+        <form action="insertOrg.php" method="post" id="inputForm">
 
             <div class="form-group">
 

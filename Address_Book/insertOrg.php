@@ -11,6 +11,10 @@ $phone = mysqli_real_escape_string($link, $_REQUEST['phone']);
 $email = mysqli_real_escape_string($link, $_REQUEST['email']);
 
 $query = "INSERT INTO `organization`(`name`, `address`, `phone_number`, `email`) VALUES($name, $address, $phone, $email)";
-mysqli_query($link, $query);
+if(mysqli_query($link, $sql)){
+    echo "Records added successfully.";
+} else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
 mysqli_close($link);
 ?>

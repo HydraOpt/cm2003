@@ -82,9 +82,7 @@
                 $orgId = $_POST["orgSelector"];
                 $delquery = "DELETE FROM `organization` WHERE `id`=".$orgId.";";
                 if(mysqli_query($link, $delquery)){
-                    echo "alert('deletion successful');",
-                        "updateSelectors();",
-                        "loadPeople();";
+                    echo "alert('deletion successful');";
                 } else {
                     echo "alert('deletion fail');";
                 }

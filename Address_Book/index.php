@@ -227,7 +227,11 @@
                 } else {
                     echo "nothing loaded";
                 }
-                print_r($orgId);
+                if($orgId) {
+                    print_r($orgId);
+                }else{
+                    print_r("didn't work");
+                }
 
                 printOrg($orgId);
             }

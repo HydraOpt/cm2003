@@ -156,7 +156,7 @@
             <label for="peopleSelector">People</label>
             <select name="peopleSelector" id="peopleSelector">
                 <script type="text/javascript">
-                loadPeople();
+                //loadPeople();
                 </script>
             </select>
             <br>

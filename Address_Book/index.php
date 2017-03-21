@@ -159,7 +159,7 @@
                 </script>
             </select>
             <br>
-            <button type ="button">Show All</button>
+            <button type ="submit">Load Person</button>
             <button type ="button">Add</button>
             <button type ="button">Edit</button>
             <button type ="button">Delete</button>

@@ -100,7 +100,7 @@
     }
 
     function addOrg(){
-        
+
     }
 
 
@@ -123,6 +123,10 @@
             margin-top: 10px;
             padding: 10px;
             background-color: #88bbd6;
+        }
+
+        .form-group {
+            display: none;
         }
         </style>
 

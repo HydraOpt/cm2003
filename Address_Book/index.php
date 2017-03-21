@@ -170,7 +170,7 @@
 
         <div id="organisationDiv">
             <form method="post">
-                <button type="submit" onclick="updateSelectors()">Load Organisations</button>
+                <button type="submit" name="loadOrgs" onclick="updateSelectors()">Load Organisations</button>
                 <br>
 
                 <label for="orgSelector">Organization</label>
@@ -181,7 +181,7 @@
             </select>
 
             <br>
-            <button type ="submit">Load</button>
+            <button type ="submit" name="loadOrg">Load</button>
             <button type ="button" onclick="addOrg()">Add</button>
             <button type ="submit">Edit</button>
             <button type ="button" name="orgDeletion" onclick="deleteOrg()">Delete</button>

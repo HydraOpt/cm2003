@@ -131,7 +131,11 @@
     }
 
     function printCurrentOrg(){
-        <?php printOrg($_POST["orgSelector"]); ?>
+        <?php if($_POST){
+                if($_POST["orgSelector"]){
+                printOrg($_POST["orgSelector"]);
+                }
+                } ?>
     }
 
 

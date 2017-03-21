@@ -17,4 +17,5 @@ if(mysqli_query($link, $query)){
     echo "ERROR: Could not able to execute $query. " . mysqli_error($link);
 }
 mysqli_close($link);
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 ?>

@@ -141,7 +141,7 @@
             </select>
 
             <br>
-            <button type ="button" onclick="loadPeople()">Load</button>
+            <button type ="submit" onclick="loadPeople()">Load</button>
             <button type ="submit">Add</button>
             <button type ="submit">Edit</button>
             <button type ="submit">Delete</button>

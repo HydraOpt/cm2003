@@ -285,11 +285,12 @@
     function printOrg($orgId){
         global $link;
         $query = "Select * FROM `organization` WHERE `id`=".$orgId.";";
-        if($result=mysqli_query($link, $query)) {
-            $row = mysqli_fetch_array($result);
-            echo 'document.getElementById("outputDiv").innerHTML += "<p>Organisation name: ' . $row["name"] . '</p><p>Address: ' . $row["address"] . '</p><p>Phone Number: ' . $row["phone_number"] . '</p><p>Email: ' . $row["email"] . '</p>";';
+        if ($result = mysqli_query($link, $query)) {
+            while ($row = mysqli_fetch_array($result)) {
+                echo 'document.getElementById("outputDiv").innerHTML += "<p>Organisation name: ' . $row["name"] . '</p><p>Address: ' . $row["address"] . '</p><p>Phone Number: ' . $row["phone_number"] . '</p><p>Email: ' . $row["email"] . '</p>";';
+                }
+            }
         }
-    }
 
 
     ?>

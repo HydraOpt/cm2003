@@ -142,7 +142,7 @@
             </select>
 
             <br>
-            <button type ="submit" onclick="loadPeople()">Load</button>
+            <button type ="submit">Load</button>
             <button type ="submit">Add</button>
             <button type ="submit">Edit</button>
             <button type ="submit">Delete</button>
@@ -197,7 +197,7 @@
 
     <div id="outputDiv">
         </div>
-    
+
     <script type="text/javascript">
         loadPeople();
     </script>

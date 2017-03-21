@@ -198,8 +198,9 @@
                 <br>
                 <input type="email" name="email" class="form-elem">
             </div>
-
+            <div class="form-group">
             <input type="submit" name="submit" class="btn" value="submit"/>
+                </div>
 
         </div>
     </form>

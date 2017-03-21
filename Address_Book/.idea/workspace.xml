@@ -26,11 +26,11 @@
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.5315729">
-              <caret line="128" column="26" selection-start-line="128" selection-start-column="26" selection-end-line="128" selection-end-column="26" />
+              <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
               <folding>
-                <marker date="1490087930044" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
-                <marker date="1490087930044" expanded="true" signature="5451:5488" placeholder="SELECT * FRO..." />
-                <marker date="1490087930044" expanded="true" signature="6228:6268" placeholder="Select * FRO..." />
+                <marker date="1490088002403" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
+                <marker date="1490088002403" expanded="true" signature="5510:5547" placeholder="SELECT * FRO..." />
+                <marker date="1490088002403" expanded="true" signature="6287:6327" placeholder="Select * FRO..." />
               </folding>
             </state>
           </provider>
@@ -184,9 +184,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1490087930044" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
-            <marker date="1490087930044" expanded="true" signature="5451:5488" placeholder="SELECT * FRO..." />
-            <marker date="1490087930044" expanded="true" signature="6228:6268" placeholder="Select * FRO..." />
+            <marker date="1490088002403" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
+            <marker date="1490088002403" expanded="true" signature="5510:5547" placeholder="SELECT * FRO..." />
+            <marker date="1490088002403" expanded="true" signature="6287:6327" placeholder="Select * FRO..." />
           </folding>
         </state>
       </provider>
@@ -194,11 +194,11 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5315729">
-          <caret line="128" column="26" selection-start-line="128" selection-start-column="26" selection-end-line="128" selection-end-column="26" />
+          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
           <folding>
-            <marker date="1490087930044" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
-            <marker date="1490087930044" expanded="true" signature="5451:5488" placeholder="SELECT * FRO..." />
-            <marker date="1490087930044" expanded="true" signature="6228:6268" placeholder="Select * FRO..." />
+            <marker date="1490088002403" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
+            <marker date="1490088002403" expanded="true" signature="5510:5547" placeholder="SELECT * FRO..." />
+            <marker date="1490088002403" expanded="true" signature="6287:6327" placeholder="Select * FRO..." />
           </folding>
         </state>
       </provider>

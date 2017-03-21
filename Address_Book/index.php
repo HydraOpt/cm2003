@@ -152,13 +152,9 @@
             <button type ="submit">Add</button>
             <button type ="submit">Edit</button>
             <button type ="submit">Delete</button>
-            </form>
-        </div>
 
         <br>
 
-        <div id="peopleDiv">
-            <form method="post">
             <label for="peopleSelector">People</label>
             <select name="peopleSelector" id="peopleSelector">
                 <script type="text/javascript">

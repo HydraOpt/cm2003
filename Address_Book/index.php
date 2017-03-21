@@ -85,9 +85,13 @@
                 echo "alert('if org sel');";
                 $orgId = $_POST["orgSelector"];
                 $query = "DELETE FROM `organization` WHERE `orgId`=" . $orgId . ";";
-                mysqli_query($link, $query);
+                if(mysqli_query($link, $query)){
+                    echo "alert('success');";
+                } else {
+                    echo "alert('fail');";
+                }
 
-            } 
+            }
         }
     }
 

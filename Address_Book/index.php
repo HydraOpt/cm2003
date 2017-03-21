@@ -270,12 +270,12 @@
                             'option.text = "' . $row["name"] . '";',
                             'option.value = ' . $row["idpeople"] . ';',
                         'peoSel.add(option);';
-                        printOrg($orgId);
+
                     }
                 } else {
                     echo "nothing loaded";
                 }
-
+                printOrg($orgId);
 
 
             }
@@ -285,9 +285,10 @@
     function printOrg($orgId){
         global $link;
         $query = "Select * FROM `organization` WHERE `id`=".$orgId.";";
-        $result=mysqli_query($link, $query);
-        $row =mysqli_fetch_array($result);
-        echo 'document.getElementById("outputDiv").innerHTML += "<p>Organisation name: '.$row["name"].'</p><p>Address: '.$row["address"].'</p><p>Phone Number: '.$row["phone_number"].'</p><p>Email: '.$row["email"].'</p>";';
+        if($result=mysqli_query($link, $query)) {
+            $row = mysqli_fetch_array($result);
+            echo 'document.getElementById("outputDiv").innerHTML += "<p>Organisation name: ' . $row["name"] . '</p><p>Address: ' . $row["address"] . '</p><p>Phone Number: ' . $row["phone_number"] . '</p><p>Email: ' . $row["email"] . '</p>";';
+        }
     }
 
 

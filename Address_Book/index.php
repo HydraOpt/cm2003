@@ -208,7 +208,7 @@
             <div class="form-group">
                 <label for="email">Email:</label>
                 <br>
-                <input type="email" name="email" class="form-elem">
+                <input type="text" name="email" class="form-elem">
             </div>
             <div class="form-group">
             <input type="submit" name="submit" class="btn" value="submit"/>

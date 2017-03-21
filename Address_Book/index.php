@@ -234,7 +234,7 @@
                     echo "nothing loaded";
                 }
 
-                //printOrg($orgId);
+                printOrg($orgId);
             }
         }
     }

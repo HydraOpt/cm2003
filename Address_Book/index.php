@@ -10,6 +10,8 @@
     //error check
     echo mysqli_connect_error();
 
+    $_POST["orgSelector"] = null;
+
     /* //saving query input
     $qSelectAll ="SELECT * FROM ".$orgTable;
 

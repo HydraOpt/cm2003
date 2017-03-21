@@ -234,14 +234,13 @@
                     echo "nothing loaded";
                 }
 
-                printOrg($orgId);
+                printOrg($_POST["orgSelector"]);
             }
         }
     }
 
 
     ?>
-
 
 </footer>
 

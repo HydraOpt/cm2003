@@ -61,7 +61,7 @@
         //todo without errors
     } */
 
-    function load() {
+    function load(){
         global $link;
         $query = "SELECT * FROM `organization`;";
         if($result=mysqli_query($link, $query)) {
@@ -75,8 +75,7 @@
         }
     }
 
-    function deleteCurrOrg()
-    {
+    function deleteCurrOrg(){
         global $link;
         if ($_POST) {
             if ($_POST["orgSelector"]) {

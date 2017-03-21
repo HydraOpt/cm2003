@@ -81,8 +81,8 @@
         if ($_POST) {
             if ($_POST["orgSelector"]) {
                 $orgId = $_POST["orgSelector"];
-                $query = "DELETE FROM `organization` WHERE `id`=".$orgId.";";
-                if(mysqli_query($link, $query)){
+                $delquery = "DELETE FROM `organization` WHERE `id`=".$orgId.";";
+                if(mysqli_query($link, $delquery)){
                     echo "alert('deletion successful');",
                         "updateSelectors();",
                         "loadPeople();";
@@ -260,7 +260,7 @@
         if ($_POST) {
             if ($_POST["orgSelector"]) {
                 $orgId = $_POST["orgSelector"];
-                $query = "SELECT * FROM `people` WHERE `orgId`=" . $orgId . ";";
+                $query = "SELECT * FROM `people` WHERE `orgId`=".$orgId.";";
                 if ($result = mysqli_query($link, $query)) {
                     while ($row = mysqli_fetch_array($result)) {
                         echo 'var peoSel = document.getElementById("peopleSelector");',

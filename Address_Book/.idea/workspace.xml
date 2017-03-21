@@ -25,18 +25,18 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4477612">
-              <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.66360503">
+              <caret line="82" column="37" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
               <folding>
-                <marker date="1490101868853" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
-                <marker date="1490101868853" expanded="true" signature="2340:2372" placeholder="DELETE FROM ..." />
-                <marker date="1490101868853" expanded="true" signature="2340:2381" placeholder="DELETE FROM ..." />
-                <marker date="1490101868853" expanded="true" signature="3654:3891" placeholder="..." />
-                <marker date="1490101868853" expanded="true" signature="3670:3814" placeholder="{...}" />
-                <marker date="1490101868853" expanded="true" signature="3836:3874" placeholder="{...}" />
-                <marker date="1490101868853" expanded="true" signature="3908:3922" placeholder="..." />
-                <marker date="1490101868853" expanded="true" signature="6575:6612" placeholder="SELECT * FRO..." />
-                <marker date="1490101868853" expanded="true" signature="7352:7392" placeholder="Select * FRO..." />
+                <marker date="1490102294550" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
+                <marker date="1490102294550" expanded="true" signature="2340:2372" placeholder="DELETE FROM ..." />
+                <marker date="1490102294550" expanded="true" signature="2340:2378" placeholder="DELETE FROM ..." />
+                <marker date="1490102294550" expanded="true" signature="3647:3884" placeholder="..." />
+                <marker date="1490102294550" expanded="true" signature="3663:3807" placeholder="{...}" />
+                <marker date="1490102294550" expanded="true" signature="3829:3867" placeholder="{...}" />
+                <marker date="1490102294550" expanded="true" signature="3901:3915" placeholder="..." />
+                <marker date="1490102294550" expanded="true" signature="6568:6605" placeholder="SELECT * FRO..." />
+                <marker date="1490102294550" expanded="true" signature="7345:7385" placeholder="Select * FRO..." />
               </folding>
             </state>
           </provider>
@@ -210,15 +210,15 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="210" column="33" selection-start-line="210" selection-start-column="33" selection-end-line="210" selection-end-column="33" />
           <folding>
-            <marker date="1490101868853" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
-            <marker date="1490101868853" expanded="true" signature="2340:2372" placeholder="DELETE FROM ..." />
-            <marker date="1490101868853" expanded="true" signature="2340:2381" placeholder="DELETE FROM ..." />
-            <marker date="1490101868853" expanded="true" signature="3654:3891" placeholder="..." />
-            <marker date="1490101868853" expanded="true" signature="3670:3814" placeholder="{...}" />
-            <marker date="1490101868853" expanded="true" signature="3836:3874" placeholder="{...}" />
-            <marker date="1490101868853" expanded="true" signature="3908:3922" placeholder="..." />
-            <marker date="1490101868853" expanded="true" signature="6575:6612" placeholder="SELECT * FRO..." />
-            <marker date="1490101868853" expanded="true" signature="7352:7392" placeholder="Select * FRO..." />
+            <marker date="1490102294550" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
+            <marker date="1490102294550" expanded="true" signature="2340:2372" placeholder="DELETE FROM ..." />
+            <marker date="1490102294550" expanded="true" signature="2340:2378" placeholder="DELETE FROM ..." />
+            <marker date="1490102294550" expanded="true" signature="3647:3884" placeholder="..." />
+            <marker date="1490102294550" expanded="true" signature="3663:3807" placeholder="{...}" />
+            <marker date="1490102294550" expanded="true" signature="3829:3867" placeholder="{...}" />
+            <marker date="1490102294550" expanded="true" signature="3901:3915" placeholder="..." />
+            <marker date="1490102294550" expanded="true" signature="6568:6605" placeholder="SELECT * FRO..." />
+            <marker date="1490102294550" expanded="true" signature="7345:7385" placeholder="Select * FRO..." />
           </folding>
         </state>
       </provider>
@@ -243,15 +243,15 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1490101868853" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
-            <marker date="1490101868853" expanded="true" signature="2340:2372" placeholder="DELETE FROM ..." />
-            <marker date="1490101868853" expanded="true" signature="2340:2381" placeholder="DELETE FROM ..." />
-            <marker date="1490101868853" expanded="true" signature="3654:3891" placeholder="..." />
-            <marker date="1490101868853" expanded="true" signature="3670:3814" placeholder="{...}" />
-            <marker date="1490101868853" expanded="true" signature="3836:3874" placeholder="{...}" />
-            <marker date="1490101868853" expanded="true" signature="3908:3922" placeholder="..." />
-            <marker date="1490101868853" expanded="true" signature="6575:6612" placeholder="SELECT * FRO..." />
-            <marker date="1490101868853" expanded="true" signature="7352:7392" placeholder="Select * FRO..." />
+            <marker date="1490102294550" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
+            <marker date="1490102294550" expanded="true" signature="2340:2372" placeholder="DELETE FROM ..." />
+            <marker date="1490102294550" expanded="true" signature="2340:2378" placeholder="DELETE FROM ..." />
+            <marker date="1490102294550" expanded="true" signature="3647:3884" placeholder="..." />
+            <marker date="1490102294550" expanded="true" signature="3663:3807" placeholder="{...}" />
+            <marker date="1490102294550" expanded="true" signature="3829:3867" placeholder="{...}" />
+            <marker date="1490102294550" expanded="true" signature="3901:3915" placeholder="..." />
+            <marker date="1490102294550" expanded="true" signature="6568:6605" placeholder="SELECT * FRO..." />
+            <marker date="1490102294550" expanded="true" signature="7345:7385" placeholder="Select * FRO..." />
           </folding>
         </state>
       </provider>
@@ -273,18 +273,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4477612">
-          <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.66360503">
+          <caret line="82" column="37" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
           <folding>
-            <marker date="1490101868853" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
-            <marker date="1490101868853" expanded="true" signature="2340:2372" placeholder="DELETE FROM ..." />
-            <marker date="1490101868853" expanded="true" signature="2340:2381" placeholder="DELETE FROM ..." />
-            <marker date="1490101868853" expanded="true" signature="3654:3891" placeholder="..." />
-            <marker date="1490101868853" expanded="true" signature="3670:3814" placeholder="{...}" />
-            <marker date="1490101868853" expanded="true" signature="3836:3874" placeholder="{...}" />
-            <marker date="1490101868853" expanded="true" signature="3908:3922" placeholder="..." />
-            <marker date="1490101868853" expanded="true" signature="6575:6612" placeholder="SELECT * FRO..." />
-            <marker date="1490101868853" expanded="true" signature="7352:7392" placeholder="Select * FRO..." />
+            <marker date="1490102294550" expanded="true" signature="1553:1581" placeholder="Select * FRO..." />
+            <marker date="1490102294550" expanded="true" signature="2340:2372" placeholder="DELETE FROM ..." />
+            <marker date="1490102294550" expanded="true" signature="2340:2378" placeholder="DELETE FROM ..." />
+            <marker date="1490102294550" expanded="true" signature="3647:3884" placeholder="..." />
+            <marker date="1490102294550" expanded="true" signature="3663:3807" placeholder="{...}" />
+            <marker date="1490102294550" expanded="true" signature="3829:3867" placeholder="{...}" />
+            <marker date="1490102294550" expanded="true" signature="3901:3915" placeholder="..." />
+            <marker date="1490102294550" expanded="true" signature="6568:6605" placeholder="SELECT * FRO..." />
+            <marker date="1490102294550" expanded="true" signature="7345:7385" placeholder="Select * FRO..." />
           </folding>
         </state>
       </provider>

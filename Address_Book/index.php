@@ -77,9 +77,12 @@
 
     function deleteCurrOrg()
     {
+        echo "<script type='text/javascript'>alert('delete start');</script>";
         global $link;
         if ($_POST) {
+            echo "<script type='text/javascript'>alert('if post');</script>";
             if ($_POST["orgSelector"]) {
+                echo "<script type='text/javascript'>alert('if org sel');</script>";
                 $orgId = $_POST["orgSelector"];
                 $query = "DELETE FROM `organization` WHERE `orgId`=" . $orgId . ";";
                 if ($result = mysqli_query($link, $query)) {
@@ -128,9 +131,7 @@
     }
 
     function deleteOrg(){
-        alert('Delete Start');
         <?php deleteCurrOrg() ?>;
-
     }
 
 

@@ -100,6 +100,7 @@
     }
 
     function addOrg(){
+        document.getElementById("title").innerText = "Add New Organisation";
         inputVisible();
     }
 
@@ -183,7 +184,9 @@
         <form method="post">
 
             <div class="form-group">
-                <label for="name">Organisation Name:</label>
+                <label id="title">Default</label>
+                <br>
+                <label for="name">Name:</label>
                 <br>
                 <input type="text" name="name" class="form-elem">
             </div>

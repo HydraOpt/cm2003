@@ -234,7 +234,7 @@
                     echo "nothing loaded";
                 }
 
-                //printOrg($_POST["orgSelector"]);
+                printOrg($_POST[$orgId]);
             }
         }
     }

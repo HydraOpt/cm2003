@@ -82,13 +82,7 @@
 
 
 
-    function printOrg($orgId){
-        global $link;
-        $query = "Select * FROM `organization` WHERE `id`=".$orgId.";";
-        $result=mysqli_query($link, $query);
-        $row =mysqli_fetch_array($result);
-        echo '<script>document.getElementById("outputDiv").innerHTML += "<p>Organisation name: '.$row["name"].'</p><p>Address: '.$row["address"].'</p><p>Phone Number: '.$row["phone_number"].'</p><p>Email: '.$row["email"].'</p>";</script>';
-    }
+
 ?>
 <script type="text/javascript">
     function updateSelectors() {
@@ -233,10 +227,19 @@
                 } else {
                     echo "nothing loaded";
                 }
+                print_r($orgId);
 
-                //printOrg($orgId);
+                printOrg($orgId);
             }
         }
+    }
+
+    function printOrg($orgId){
+        global $link;
+        $query = "Select * FROM `organization` WHERE `id`=".$orgId.";";
+        $result=mysqli_query($link, $query);
+        $row =mysqli_fetch_array($result);
+        echo '<script>document.getElementById("outputDiv").innerHTML += "<p>Organisation name: '.$row["name"].'</p><p>Address: '.$row["address"].'</p><p>Phone Number: '.$row["phone_number"].'</p><p>Email: '.$row["email"].'</p>";</script>';
     }
 
 

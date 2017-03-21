@@ -65,6 +65,7 @@
 
     function load() {
         global $link;
+        $_POST["orgSelector"];
         $query = "Select * FROM `organization`;";
         if($result=mysqli_query($link, $query)) {
             while ($row = mysqli_fetch_array($result)) {

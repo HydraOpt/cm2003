@@ -77,19 +77,19 @@
 
     function deleteCurrOrg()
     {
-        echo "<script type='text/javascript'>alert('delete start');</script>";
+        echo "alert('delete start');";
         global $link;
         if ($_POST) {
-            echo "<script type='text/javascript'>alert('if post');</script>";
+            echo "alert('if post');";
             if ($_POST["orgSelector"]) {
-                echo "<script type='text/javascript'>alert('if org sel');</script>";
+                echo "alert('if org sel');";
                 $orgId = $_POST["orgSelector"];
                 $query = "DELETE FROM `organization` WHERE `orgId`=" . $orgId . ";";
                 if ($result = mysqli_query($link, $query)) {
-                    echo "<script type='text/javascript'>alert('Delete Success');</script>";
+                    echo "alert('Delete Success');";
                 }
             } else {
-                echo "<script type='text/javascript'>alert('Delete Fail');</script>";
+                echo "alert('Delete Fail');";
             }
         }
     }

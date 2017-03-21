@@ -128,6 +128,7 @@
     }
 
     function deleteOrg(){
+        <?php deleteCurrOrg() ?>;
 
     }
 

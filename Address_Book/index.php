@@ -139,6 +139,9 @@
 
         <div id="organisationDiv">
             <form method="post">
+                <button type="submit" onclick="updateSelectors()">Load Organisations</button>
+                <br>
+
                 <label for="orgSelector">Organization</label>
                 <select name="orgSelector" id="orgSelector" <!-- onchange="" -->>
                 <script type="text/javascript">

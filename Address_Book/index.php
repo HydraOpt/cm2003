@@ -83,10 +83,10 @@
                 $orgId = $_POST["orgSelector"];
                 $query = "DELETE FROM `organization` WHERE `orgId`=" . $orgId . ";";
                 if ($result = mysqli_query($link, $query)) {
-                    print_r("Delete Success");
+                    echo "<script type='text/javascript'>alert('Delete Success');</script>";
                 }
             } else {
-                print_r("Delete Fail");
+                echo "<script type='text/javascript'>alert('Delete Fail');</script>";
             }
         }
     }

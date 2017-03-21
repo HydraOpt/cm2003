@@ -10,7 +10,7 @@ $address = mysqli_real_escape_string($link, $_REQUEST['address']);
 $phone = mysqli_real_escape_string($link, $_REQUEST['phone']);
 $email = mysqli_real_escape_string($link, $_REQUEST['email']);
 
-$query = "INSERT INTO `organization`(`name`, `address`, `phone_number`, `email`) VALUES('.$name.','.$address.','.$phone.','.$email.')";
+$query = "INSERT INTO `organization`(`name`, `address`, `phone_number`, `email`) VALUES('$name','$address','$phone','$email')";
 if(mysqli_query($link, $query)){
     echo "Records added successfully.";
 } else{

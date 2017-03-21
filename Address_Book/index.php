@@ -270,13 +270,14 @@
                             'option.text = "' . $row["name"] . '";',
                             'option.value = ' . $row["idpeople"] . ';',
                         'peoSel.add(option);';
+                        printOrg($orgId);
                     }
                 } else {
                     echo "nothing loaded";
                 }
 
 
-                printOrg($orgId);
+
             }
         }
     }

@@ -172,9 +172,7 @@
             <form method="post">
                 <button type="submit" id="loadOrgs" onclick="updateSelectors()">Load Organisations</button>
                 <br>
-            </form>
 
-            <form method="post">
                 <label for="orgSelector">Organization</label>
                 <select name="orgSelector" id="orgSelector">
                 <script type="text/javascript">
@@ -184,13 +182,12 @@
 
             <br>
             <button type ="submit" id="loadOrg">Load</button>
-            </form>
             <button type ="button" name="addOrgBtn" id="addOrgBtn" onclick='addOrg()'>Add</button>
             <button type ="submit">Edit</button>
             <button type ="button" name="orgDeletion" id="orgDeletion" onclick="deleteOrg()">Delete</button>
 
         <br>
-            <form method="post">
+
             <label for="peopleSelector">People</label>
             <select name="peopleSelector" id="peopleSelector">
             </select>
@@ -256,8 +253,7 @@
     <?php
     if($_POST)print_r($_POST);
 
-    function loadPeople()
-    {
+    function loadPeople(){
         global $link;
         if ($_POST) {
             if ($_POST["orgSelector"]) {
@@ -274,8 +270,6 @@
                 } else {
                     echo "nothing loaded";
                 }
-
-
                 printOrg($orgId);
             }
         }

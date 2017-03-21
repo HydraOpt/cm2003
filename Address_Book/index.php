@@ -68,7 +68,7 @@
         global $orgElem;
         $query = "Select * FROM `organization`;";
         if($result=mysqli_query($link, $query)) {
-            $orgElem = $result;
+            print_r($result);
             while ($row = mysqli_fetch_array($result)) {
                 echo 'var orgSel = document.getElementById("orgSelector");',
                 'var option = document.createElement("option");',

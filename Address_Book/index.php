@@ -182,7 +182,7 @@
 
             <br>
             <button type ="submit" name="loadOrg" id="loadOrg">Load</button>
-            <button type ="button" name="addOrgBtn" id="addOrgBtn" onclick="addOrg()">Add</button>
+            <button type ="button" name="addOrgBtn" id="addOrgBtn" onclick='addOrg()'>Add</button>
             <button type ="submit">Edit</button>
             <button type ="button" name="orgDeletion" id="orgDeletion" onclick="deleteOrg()">Delete</button>
 

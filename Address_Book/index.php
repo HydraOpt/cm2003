@@ -187,7 +187,7 @@
             </select>
 
             <br>
-            <button type ="submit" id="loadOrg">Load</button>
+            <button type ="submit" id="loadOrg" onclick="printCurrentOrg()">Load</button>
             <button type ="button" name="addOrgBtn" id="addOrgBtn" onclick="addOrg()">Add</button>
 
 

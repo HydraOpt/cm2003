@@ -184,7 +184,7 @@
             <button type ="submit">Load</button>
             <button type ="button" onclick="addOrg()">Add</button>
             <button type ="submit">Edit</button>
-            <button type ="submit" onclick="deleteOrg()">Delete</button>
+            <button type ="button" onclick="deleteOrg()">Delete</button>
 
         <br>
 

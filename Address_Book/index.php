@@ -239,7 +239,7 @@
         $query = "Select * FROM `organization` WHERE `id`=".$orgId.";";
         $result=mysqli_query($link, $query);
         $row =mysqli_fetch_array($result);
-        echo '<script>document.getElementById("outputDiv").innerHTML += "<p>Organisation name: '.$row["name"].'</p><p>Address: '.$row["address"].'</p><p>Phone Number: '.$row["phone_number"].'</p><p>Email: '.$row["email"].'</p>";</script>';
+        echo 'document.getElementById("outputDiv").innerHTML += "<p>Organisation name: '.$row["name"].'</p><p>Address: '.$row["address"].'</p><p>Phone Number: '.$row["phone_number"].'</p><p>Email: '.$row["email"].'</p>";';
     }
 
 

@@ -154,7 +154,9 @@
             <form method="post">
             <label for="peopleSelector">People</label>
             <select name="peopleSelector" id="peopleSelector">
+                <script type="text/javascript">
                 loadPeople();
+                </script>
             </select>
             <br>
             <button type ="button">Show All</button>

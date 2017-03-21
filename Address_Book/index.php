@@ -100,7 +100,14 @@
     }
 
     function addOrg(){
+        inputVisible();
+    }
 
+    function inputVisible(){
+        var group = document.getElementsByClassName("form-group");
+        for(var i = 0; i < group.length; i++){
+            group[i].style.display = "inline";
+        }
     }
 
 
@@ -129,11 +136,6 @@
             display: none;
         }
 
-        br {
-            display: block;
-            margin-top: 10px;
-        }
-        
         </style>
 
 </head>

@@ -22,25 +22,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.607143">
-              <caret line="208" column="44" selection-start-line="208" selection-start-column="25" selection-end-line="208" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.42449465">
+              <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
               <folding>
-                <marker date="1490118282712" expanded="true" signature="354:382" placeholder="SELECT * FRO..." />
-                <marker date="1490118282712" expanded="true" signature="1019:1057" placeholder="DELETE FROM ..." />
-                <marker date="1490118282712" expanded="true" signature="5556:5593" placeholder="SELECT * FRO..." />
-                <marker date="1490118282712" expanded="true" signature="6334:6374" placeholder="Select * FRO..." />
+                <marker date="1490119279816" expanded="true" signature="354:382" placeholder="SELECT * FRO..." />
+                <marker date="1490119279816" expanded="true" signature="1019:1057" placeholder="DELETE FROM ..." />
+                <marker date="1490119279816" expanded="true" signature="5570:5607" placeholder="SELECT * FRO..." />
+                <marker date="1490119279816" expanded="true" signature="6348:6388" placeholder="Select * FRO..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="insertPerson.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="insertPerson.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/insertPerson.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13662457">
+            <state vertical-scroll-proportion="-4.576923">
               <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
               <folding>
                 <marker date="1490118618527" expanded="true" signature="499:631" placeholder="INSERT INTO ..." />
@@ -67,8 +67,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/insertOrg.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/insertPerson.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -78,6 +78,9 @@
   </component>
   <component name="NamedScopeManager">
     <order />
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -135,6 +138,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -165,6 +169,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="797cdf5a-9ebf-4ee0-9656-b0ff54d1e576" name="Default" comment="" />
@@ -175,8 +182,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09322917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -198,6 +205,14 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -213,10 +228,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1490118282712" expanded="true" signature="354:382" placeholder="SELECT * FRO..." />
-            <marker date="1490118282712" expanded="true" signature="1019:1057" placeholder="DELETE FROM ..." />
-            <marker date="1490118282712" expanded="true" signature="5556:5593" placeholder="SELECT * FRO..." />
-            <marker date="1490118282712" expanded="true" signature="6334:6374" placeholder="Select * FRO..." />
+            <marker date="1490119279816" expanded="true" signature="354:382" placeholder="SELECT * FRO..." />
+            <marker date="1490119279816" expanded="true" signature="1019:1057" placeholder="DELETE FROM ..." />
+            <marker date="1490119279816" expanded="true" signature="5570:5607" placeholder="SELECT * FRO..." />
+            <marker date="1490119279816" expanded="true" signature="6348:6388" placeholder="Select * FRO..." />
           </folding>
         </state>
       </provider>
@@ -236,10 +251,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="210" column="33" selection-start-line="210" selection-start-column="33" selection-end-line="210" selection-end-column="33" />
           <folding>
-            <marker date="1490118282712" expanded="true" signature="354:382" placeholder="SELECT * FRO..." />
-            <marker date="1490118282712" expanded="true" signature="1019:1057" placeholder="DELETE FROM ..." />
-            <marker date="1490118282712" expanded="true" signature="5556:5593" placeholder="SELECT * FRO..." />
-            <marker date="1490118282712" expanded="true" signature="6334:6374" placeholder="Select * FRO..." />
+            <marker date="1490119279816" expanded="true" signature="354:382" placeholder="SELECT * FRO..." />
+            <marker date="1490119279816" expanded="true" signature="1019:1057" placeholder="DELETE FROM ..." />
+            <marker date="1490119279816" expanded="true" signature="5570:5607" placeholder="SELECT * FRO..." />
+            <marker date="1490119279816" expanded="true" signature="6348:6388" placeholder="Select * FRO..." />
           </folding>
         </state>
       </provider>
@@ -259,10 +274,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1490118282712" expanded="true" signature="354:382" placeholder="SELECT * FRO..." />
-            <marker date="1490118282712" expanded="true" signature="1019:1057" placeholder="DELETE FROM ..." />
-            <marker date="1490118282712" expanded="true" signature="5556:5593" placeholder="SELECT * FRO..." />
-            <marker date="1490118282712" expanded="true" signature="6334:6374" placeholder="Select * FRO..." />
+            <marker date="1490119279816" expanded="true" signature="354:382" placeholder="SELECT * FRO..." />
+            <marker date="1490119279816" expanded="true" signature="1019:1057" placeholder="DELETE FROM ..." />
+            <marker date="1490119279816" expanded="true" signature="5570:5607" placeholder="SELECT * FRO..." />
+            <marker date="1490119279816" expanded="true" signature="6348:6388" placeholder="Select * FRO..." />
           </folding>
         </state>
       </provider>
@@ -277,25 +292,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/insertPerson.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.607143">
-          <caret line="208" column="44" selection-start-line="208" selection-start-column="25" selection-end-line="208" selection-end-column="46" />
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
           <folding>
-            <marker date="1490118282712" expanded="true" signature="354:382" placeholder="SELECT * FRO..." />
-            <marker date="1490118282712" expanded="true" signature="1019:1057" placeholder="DELETE FROM ..." />
-            <marker date="1490118282712" expanded="true" signature="5556:5593" placeholder="SELECT * FRO..." />
-            <marker date="1490118282712" expanded="true" signature="6334:6374" placeholder="Select * FRO..." />
+            <marker date="1490118618527" expanded="true" signature="499:631" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/insertPerson.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13662457">
-          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.42449465">
+          <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
           <folding>
-            <marker date="1490118618527" expanded="true" signature="499:631" placeholder="INSERT INTO ..." />
+            <marker date="1490119279816" expanded="true" signature="354:382" placeholder="SELECT * FRO..." />
+            <marker date="1490119279816" expanded="true" signature="1019:1057" placeholder="DELETE FROM ..." />
+            <marker date="1490119279816" expanded="true" signature="5570:5607" placeholder="SELECT * FRO..." />
+            <marker date="1490119279816" expanded="true" signature="6348:6388" placeholder="Select * FRO..." />
           </folding>
         </state>
       </provider>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- link to JQuery (?) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+// alternative way to start a function onload
+$(document).ready(function(){
+  // click event associated to id
+    $("#btn1").click(function(){
+      // append text on click to all p
+        $("p").append(" <b>Appended text</b>.");
+    });
+});
+</script>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button id="btn1">Append text</button>
+</body>
+</html>

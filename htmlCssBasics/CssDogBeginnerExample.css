@@ -13,6 +13,45 @@ p {
     line-height: 21px;
 }
 
+/* Apply to all */
+*{
+  text-align: left;
+}
+
+/* Elements can be floated left and right elements after the floating will flow around so if screen size changes elements will move down */
+.thumbnail{
+  float:left;
+  width: 110px;
+  height: 90px;
+  margin: 5px;
+}
+
+/* To avoid floating araound the element after the floating ones will need the clear command to stay fixed; */
+.somethingAfter {
+  clear: both;
+}
+
+/* to avoid that a contained floated element will flow out from its container, put in container */
+.clearfix {
+    overflow: auto;
+}
+/* or */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Apply to all a element with id "menu" */
+#menu a {
+  padding: 45px 25px 0px 25px;
+}
+
+/* apply to all h1 h2 and h3 element */
+h1, h2, h3 {
+  font-family: "Verdana";
+}
+
 h1 {
     color: #ffc;
     background-color: #900;

@@ -64,9 +64,10 @@
     }
 
     function addPerson(){
+        /*
         document.getElementById("title").innerText = "Add New Person";
         document.getElementById("inputForm").action = "insertPerson.php";
-        inputVisible();
+        inputVisible(); */
     }
 
     function inputVisible(){

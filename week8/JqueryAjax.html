@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery Ajax</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!-- these scripts are meant to be ran individually just uncomment the one you want to investigate. They are in order of progression-->
+
+
+<!-- useless -->
+<!-- <script src="documentReady.js"></script> -->
+<!-- still useless -->
+<!-- <script src="addItem.js"></script> -->
+<!-- at least this one store the input -->
+ <!-- <script src="submitToList.js"></script> -->
+ <!-- first meaningful thing
+ add the word to the url, made the search and change it to a string inserting it in a p element -->
+<!-- <script src="printJSON.js"></script> -->
+<!-- same thing but prettyprinted (the last arguments in stringify are null and 4) -->
+ <script src="prettyPrintJSON.js"></script>
+<!-- final piece, move inside the JSON response and produce a list of movie titles -->
+<!-- <script src="finalScript.js"></script> -->
+</head>
+<body id="base">
+	<h1>jQuery Ajax Demo</h1>
+
+    <form id="searchform">
+    	<input type ="text" id="searchterms">
+        <input type ="submit" value="Search">
+     </form>
+
+     <div id="resultsbox">
+     	<ol id="results">
+         <!-- content will be loaded here (promise) -->
+		</ol>
+      </div>
+</body>
+</html>

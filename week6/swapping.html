@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <p>Skittles</p>
+    <p>Fear</p>
+    <p>Anger</p>
+
+    <script>
+        var paragraphs = document.body.getElementsByTagName("p");
+        // this insert the para2 before the 0 but in particular it remove the original one
+        document.body.insertBefore(paragraphs[2], paragraphs[0]);
+
+        var newPara = document.createElement("p");
+        var text = document.createTextNode("A Jedi craves not these things");
+        newPara.appendChild(text);
+        // adding at the end
+        document.body.appendChild(newPara);
+
+        //create a p element, create a text, appending the text and finally replacing para2 with the new pare
+        var extranewPara = document.createElement("p");
+        var text = document.createTextNode("Buttplug");
+        extranewPara.appendChild(text);
+        document.body.replaceChild(extranewPara, paragraphs[2]);
+    </script>
+
+    <!-- Different ways to include an onclick event -->
+    <h1 id="id1">My Heading 1</h1>
+    <button type="button" onclick="document.getElementById('id1').style.color ='red';">
+      Click Me!
+    </button>
+
+    <button type="button" onclick="go()">
+      Click Me Too!
+    </button>
+
+    <script src="myscript.js"></script>
+    <button type="button" onclick="goAgain()">
+        Click Me for yellow!
+    </button>
+    <script>
+        function go() {
+            document.getElementById('id1').style.color = 'blue';
+        }
+    </script>
+</body>
+
+</html>

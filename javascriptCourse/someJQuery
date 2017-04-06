@@ -1,0 +1,79 @@
+// add all the div to class "red", than fade out
+$('div').addClass('red').fadeOut();
+
+/*
+Function:
+Moving
+append(), appendTo(), before(), after
+Manipolating element attrivutes
+css(), attr(), html(), val(), addClass(),
+GET           SET
+.attr('id'),  .attr('id', 'foo')
+.html()         .html('<p>hello</p>')
+.val()          .val('new value')
+.css('color')   .css('color', 'red')
+i.e.
+//setting CSS
+$('div').css('border', '1px solid black');
+//multiple css
+$('div').css({
+'background': 'yellow',
+'height':'400px'
+});
+
+Handle events
+bind(), trigger, unbind(), click()
+Display effect
+show(), fadeOut(), animate()
+Traversing elements
+find(), is(), prevAll(), next(), hasClass()
+Ajax Requests
+get(), getJSON(), post(), ajax()
+
+//download jQuery ???
+<script src="jquery-1.12.0.min.js"></script>
+//or on runtime
+<script src="http//code.jquery.com/jquery-1.12.o.min.js">
+
+// onload start
+$(function()){
+});
+//or
+$(document).ready(function(){
+});
+
+//adding elements
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").append("<b>Appended</b>")
+  }
+});
+
+//when loaded
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("ol").prepend("<li>prepend</li>")
+  }
+});
+
+
+$('button').click(function(){
+  doSomething()
+});
+function doSomething(){
+  //standard JavaScript + jQuery
+}
+
+//Keyboard
+//$('#textbox').keyup(function(event){
+  console.log(event.keyCode);
+});
+//keydown keypress
+
+//jQuery UI impressive effects i.e. draggable
+
+//Animation
+//animate element from current size to 300px in 0.5 sec
+$('#myelement').animate({'width':'300px'}, 500);
+//fade opacity to 30% in 0.5sec
+$('#myelement').fadeTo(500, 0.3);
